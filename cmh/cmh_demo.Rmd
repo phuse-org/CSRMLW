@@ -2,10 +2,7 @@
 title: "CMH Issue Demo"
 author: "Mike Stackhouse"
 date: "2/22/2021"
-output:
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
+output: github_document
 ---
 
 ```{r setup, include=FALSE}

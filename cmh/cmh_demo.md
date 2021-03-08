@@ -1,0 +1,93 @@
+CMH Issue Demo
+================
+Mike Stackhouse
+2/22/2021
+
+## Backstory
+
+Within the original CDISC Pilot Project, the example CSR included the
+use of the CMH test. For portions of the analysis, the statistical
+analysis plan specifically calls out the following:
+
+> Treatments will be compared for overall differences by
+> Cochran-Mantel-Haentzel (CMH) test referred to in SAS(R) as “row mean
+> scores differ,” 2 degrees of freedom.
+
+While base R has the
+[`mantelhaen.test`](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/mantelhaen.test)
+function, unfortunately the alternative hypothesis specified in the
+CDISC Pilot Project is not available.
+
+There are several other packages that offer implementations of the CMH
+test, but the only one (at least that I ahve found) that offers the “row
+mean scores differ” alternative hypothesis is the package
+[`vcdExtra`](https://github.com/friendly/vcdExtra) through the function
+[`vcdExtra::CMHtest`](https://www.rdocumentation.org/packages/vcdExtra/versions/0.7-1/topics/CMHtest).
+
+Unfortunately, a problem arises with the CDISC pilot data, as can be
+seen in [this GitHub
+issue](https://github.com/friendly/vcdExtra/issues/3):
+
+> For large sparse table (many strata) CMHTest will occasionally throw a
+> Error in solve.default(AVA)
+
+This error is encountered when trying to replicate outputs in the CDISC
+pilot project such as [Table
+14-3.13](https://github.com/atorus-research/CDISC_pilot_replication/blob/master/outputs/14-3.13.rtf).
+The thread goes on to recommend that a use of `solve()` is replaced with
+`MASS::ginv`.
+
+This update does in fact work, and I’ve implemented in the fork of the
+`vcdExtra` package below. This can be demonstrated in the following
+example
+
+*Note: For further examples in this document to work you will need a
+forked version of the `vcdExtra` package installed. You can install as
+follows:*
+
+``` r
+Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = "true")
+devtools::install_github("mstackhouse/vcdExtra")
+```
+
+## Data Preparation
+
+The data here are taken from the the [PHUSE Test Data
+Factory](https://advance.phuse.global/display/WEL/Test+Dataset+Factory)
+replication of the CDISC Pilot Project (original data aren’t easily
+accessible at this point).
+
+``` r
+cbic <- haven::read_xpt("https://github.com/phuse-org/TestDataFactory/raw/main/Updated/TDF_ADaM/adcibc.xpt") %>%
+  filter(EFFFL == 'Y' & ITTFL == 'Y', AVISITN %in% c(8, 16, 24) & ANL01FL=='Y')
+```
+
+## Row Mean Scores Differ Example
+
+With the subset data included, we can create a function for the CMH test
+using the forked vcdExtra package.
+
+``` r
+cmh_p <- function(.data, formula, alternate=c('rmeans', 'cmeans', 'general', 'cor')) {
+
+  # Pull out the hypoth
+  alternate <- match.arg(alternate, several.ok=FALSE)
+
+  # Run the test
+  res <- vcdExtra::CMHtest(formula, data=.data, overall=TRUE)$ALL
+
+  pvalue <- unlist(res$table[alternate, 'Prob'])
+  pvalue
+}
+```
+
+And we can recreate the results from the CDISC pilot.
+
+``` r
+cbic %>% 
+  group_by(AVISITN) %>% 
+  group_map(~ cmh_p(.x, formula=AVAL ~ TRTP | SITEGR1)) %>%
+  unlist()
+```
+
+    ## [1] 0.2727284 0.4003147 0.6180439
