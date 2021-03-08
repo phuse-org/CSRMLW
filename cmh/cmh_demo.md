@@ -1,13 +1,15 @@
 CMH Issue Demo
 ================
 Mike Stackhouse
-2/22/2021
+08 March, 2021
 
 ## Backstory
 
-Within the original CDISC Pilot Project, the example CSR included the
-use of the CMH test. For portions of the analysis, the statistical
-analysis plan specifically calls out the following:
+Within the original [CDISC Pilot
+Project](https://bitbucket.cdisc.org/projects/CED/repos/sdtm-adam-pilot-project/browse),
+the example CSR included the use of the CMH test. For portions of the
+analysis, the statistical analysis plan specifically calls out the
+following:
 
 > Treatments will be compared for overall differences by
 > Cochran-Mantel-Haentzel (CMH) test referred to in SAS(R) as “row mean
@@ -19,7 +21,7 @@ function, unfortunately the alternative hypothesis specified in the
 CDISC Pilot Project is not available.
 
 There are several other packages that offer implementations of the CMH
-test, but the only one (at least that I ahve found) that offers the “row
+test, but the only one (at least that I have found) that offers the “row
 mean scores differ” alternative hypothesis is the package
 [`vcdExtra`](https://github.com/friendly/vcdExtra) through the function
 [`vcdExtra::CMHtest`](https://www.rdocumentation.org/packages/vcdExtra/versions/0.7-1/topics/CMHtest).
@@ -54,8 +56,8 @@ devtools::install_github("mstackhouse/vcdExtra")
 
 The data here are taken from the the [PHUSE Test Data
 Factory](https://advance.phuse.global/display/WEL/Test+Dataset+Factory)
-replication of the CDISC Pilot Project (original data aren’t easily
-accessible at this point).
+replication of the [CDISC Pilot
+Project](https://bitbucket.cdisc.org/projects/CED/repos/sdtm-adam-pilot-project/browse).
 
 ``` r
 cbic <- haven::read_xpt("https://github.com/phuse-org/TestDataFactory/raw/main/Updated/TDF_ADaM/adcibc.xpt") %>%
