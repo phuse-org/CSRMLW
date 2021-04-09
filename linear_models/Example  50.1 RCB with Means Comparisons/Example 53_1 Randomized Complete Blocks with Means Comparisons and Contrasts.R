@@ -54,7 +54,24 @@ glance_glm1 <-
   glance(glm1)  %>% 
   print()
 
-plot(glm1)
 
+# Using lm() function
+lm1 <- lm(StemLength ~ type + block, data = plants) %>%
+  print()
 
+tidy_lm1 <- 
+  tidy(lm1) %>% 
+  print()
+
+summary_lm1 <- 
+  summary(lm1)  %>% 
+  print()
+
+augment_lm1 <- 
+  augment(lm1) %>% 
+  print()
+
+glance_lm1 <- 
+  glance(lm1)  %>% 
+  print()
 
