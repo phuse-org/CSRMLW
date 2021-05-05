@@ -84,6 +84,14 @@ s9data <- adcibc %>%
   mutate(Schema = 9)
 
 
+# Schema 10
+
+s10data <- adcibc %>%
+  count(TRTP, AVAL, AGEGR1) %>%
+  dplyr::select(Freq = n, x = AVAL, y = AGEGR1, k = TRTP) %>%
+  mutate(Schema = 10)
+
+
 # 03: Analysis Prep
 # Write a function to be applied over each schema and return results
 # If analysis bombs (due to an error), indicate this, for potential follow-up
@@ -94,6 +102,9 @@ grab_cmh <- function(data) {
       rownames_to_column(., "Hypothesis")},
     error = function(e){return('Analysis Did Not Run')})
 }
+
+
+
 
 # Collect all schema data sets
 all_data<- mget(ls(pattern = "data")) %>%
