@@ -125,7 +125,6 @@ cleaned_results <- all_results %>%
                                 !is.na(results) ~ "Analysis Did Not Run")) %>%
   # Not provided in SAS
   filter(Hypothesis != "C") %>%
-  select(-results) %>%
   mutate_all(as.character)
 
 # Write results
