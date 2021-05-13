@@ -10,7 +10,6 @@ library(magrittr)
 library(epiDisplay)
 
 # 01: Generic function to extract MHOR
-# the ordering inside of mhor needs to be verified to line up with schemas !!!
 get_or <- function(data) {
   data %>%
     uncount(weights = Freq) %$%
@@ -20,8 +19,8 @@ get_or <- function(data) {
     filter(str_detect(col1 , "M-H|Homogeneity test"))
 }
 
-# 02: Run things through a loop - 9 schemas in total
-for(i in 1:9) {
+# 02: Run things through a loop - 10 schemas in total
+for(i in 1:10) {
   tryCatch({
   assign(paste0("mhor", i),
          get(paste0("s",i,"data")) %>%
@@ -35,10 +34,9 @@ for(i in 1:9) {
 all_or_results <- mget(ls(pattern = "mhor")) %>%
   reduce(bind_rows)
 
-# schema 1,2,4,6 only ran
-# why not 8?
-# why did 4 run?
+# Write results - for processing down the road
+r_mhor <- all_or_results
+save(r_mhor, file = here::here('cmh/results/R/r_mhor.Rdata'))
 
-# Need to verify the coding of x, y and k inside mhor()
 
 

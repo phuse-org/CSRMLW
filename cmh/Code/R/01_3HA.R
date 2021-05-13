@@ -1,4 +1,4 @@
-# Intent: This R script will use the vcdExtra package (forked version) to run and extract:
+# Intent: This R script will use the vcdExtra package (CRAN version) to run and extract:
 # 1) Chi-Square test statistic, 2) degrees of freedom, 3) p-value
 # for each of the 3 alternative hypothesis for the CMH test.
 
@@ -85,7 +85,6 @@ s9data <- adcibc %>%
 
 
 # Schema 10
-
 s10data <- adcibc %>%
   count(TRTP, AVAL, AGEGR1) %>%
   dplyr::select(Freq = n, x = AVAL, y = AGEGR1, k = TRTP) %>%
@@ -102,8 +101,6 @@ grab_cmh <- function(data) {
       rownames_to_column(., "Hypothesis")},
     error = function(e){return('Analysis Did Not Run')})
 }
-
-
 
 
 # Collect all schema data sets
@@ -131,3 +128,8 @@ cleaned_results <- all_results %>%
 xlsx::write.xlsx(cleaned_results,
                  file = here::here("cmh/Results/R","R_3HA_vcdExtra_forked.xlsx"),
                  sheetName = "R_Results_1")
+
+# Write results - for processing down the road
+r_3ha <- cleaned_results
+save(r_3ha, file = here::here('cmh/results/R/r_3ha.Rdata'))
+
