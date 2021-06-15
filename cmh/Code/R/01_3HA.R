@@ -96,7 +96,7 @@ s10data <- adcibc %>%
 # If analysis bombs (due to an error), indicate this, for potential follow-up
 grab_cmh <- function(data) {
   tryCatch({
-    CMHtest(Freq~x+y|k, data=data, overall=TRUE, details=TRUE, types="ALL")$ALL$table %>%
+    CMHtest(Freq~x+y|k, data=data, overall=TRUE, details=TRUE )$ALL$table %>%
       as.data.frame() %>%
       rownames_to_column(., "Hypothesis")},
     error = function(e){return('Analysis Did Not Run')})
