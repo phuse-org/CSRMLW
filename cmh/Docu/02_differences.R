@@ -37,3 +37,18 @@ CMHtest(Freq~x+y|k, data=s10data, overall=TRUE, details=TRUE, types=c("rmeans"))
 # I dont think this function is consistent and is bugged?...
 
 
+library(tidyverse)
+
+test <- h %>%
+  pivot_longer(cols = 1:16) %>%
+  mutate(race = rep(c('black','white'), each = 16)) %>%
+  mutate(status = substr(name, 1, 1)) %>%
+  select(-name) %>%
+  mutate(profession = c(rep(1:8, each = 2), rep(1:8, each = 2))) %>%
+  select(Freq = value,
+         y = profession,
+         x = race,
+         k = status)
+
+
+CMHtest(Freq~x+y|k, data=test, overall=TRUE, details=TRUE, types="ALL")$ALL$table
