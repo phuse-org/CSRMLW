@@ -1,0 +1,165 @@
+---
+title: "CMH Test"
+author: "Clara Beck, Matthew Kumar & Aiming Yang"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc : true
+    toc_float: true
+    number_sections: true
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Cochran-Mantel-Haenszel Test - Background
+
+The CMH procedure tests for conditional independence in partial tables usually for a 2x2xK design. However, it can be generalized to IxJxK tables (Agresti). Depending on the nature of the variables, the number of degrees of freedom differs: 
+
+- general association statstic (X and Y are treated as nominal) results in (X-1) * (Y-1) dfs
+- row mean scores statistic (X is nominal and Y is ordinal) results in X-1 dfs
+- nonzero correlation statistic (X and Y ordinal) results in 1 df
+
+To be consistent between SAS and R, the following naming conventions are used when referring to variables below: 
+
+X = exposure 
+
+Y = response 
+
+K = control 
+
+
+# Testing Schemata
+
+In order to follow a systematic approach and to cover the 2x2xK as well as the generalized CMH test multiple data schemata were tested. Also, some edge cases with sparse data were used. From the original 10 schemata, we selected four which demonstrate the main issues: 
+
+| Number  | Schema |  Variables | Relevant Test | Description |   
+|---|---|---|---|---|
+|  1 | 2x2x2   | X = TRTP, Y = SEX, K = AGEGR1  | General Association | TRTP and AGEGR1 were limited to two categories, overall the the groups were rather balanced |   
+|   3| 2x2x3  | X = TRTP, Y = SEX, K = RACE  |  General Association |   Imbalanced?|
+|   6| 2x5x2  | X = TRTP, Y = AVAL, K = SEX  |  Row Means |   Filtered|
+|   9|  3x5x17 |X = TRTP, Y = AVAL, K = SITEID   | Row Means   | SITEID has many strata and provokes sparse groups, AVAL is ordinal, therefore row means statistic applies here  | 
+| 10 | 5x3x3  | X = AVAL, Y = AGEGR1, K = TRTP |  Correlation | X and Y are ordinal variables and therefore the correlation statistics has to be taken here |
+
+# Implementation
+
+## Data 
+
+For the further documentation the CDSIC data were used and pre-preocessed: 
+
+```{r, eval = FALSE}
+### how to get data 
+### pre-filtering data 
+
+haven::read_xpt("https://github.com/phuse-org/TestDataFactory/raw/main/Updated/TDF_ADaM/adcibc.xpt") %>% 
+  filter(EFFFL == 'Y' & ITTFL == 'Y', AVISITN == 8 & ANL01FL=='Y') 
+
+```
+
+
+## In SAS 
+
+Thr cmh test is calculated in SAS using the PROC FREQ, details can be found in the documentation:
+https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.3/statug/statug_freq_examples07.htm
+It outputs the chi square and the respective p-values, the odds ratios and the homogenity test by default. 
+
+```{r, eval = FALSE}
+
+Proc freq data = filtered_data; 
+tables K * X * Y / cmh; 
+run; 
+
+```
+
+
+## In R 
+
+We did not find any R package that delivers all the same measures as SAS at once. Therefore, we tried out multiple packages: 
+
+- **base R - mantelhaen functon** --> works well for 2x2xK schemata where X and Y are nominal, delivers χ2, p-value and odds ratios
+- **vcdExtra package**--> delivers all three types of associations, no odds ratio, has problems with sparse data & is bugged
+- **epiDisplay package** --> gives back the odds ratios
+
+
+### Mantelhaen functiom
+
+```{r, eval = F}
+mantelhaen.test(x = data$x, y = data$y, z = data$k)
+```
+
+
+### VCD Extra package 
+
+The vcdExtra package provides results for the generalized CMH test, for each of the three model it outputs the Chi-square value and the respective p-values. 
+
+```{r, eval = FALSE}
+library(vcdExtra)
+CMHtest(Freq~X+Y|K,data=filtered_data, overall=TRUE) 
+```
+
+#### Forked Version - Solution for sparse data
+
+xxx
+
+#### Bug 
+
+xxx
+
+### Epi Display package 
+
+To get the common odds ration another package has to be used in R...
+
+```{r, eval = FALSE}
+library(epiDisplay) 
+
+mhor(x,y,k, graph = FALSE)
+```
+
+
+### Homogenity Test
+
+```{r, eval = FALSE}
+# add code here
+```
+
+
+
+
+# Results
+
+Here the results can be seen: 
+
+
+## CMH Statistics 
+```{r, echo = F}
+readRDS("~/CSRMLW/cmh/Results/R/table1.RDS")
+```
+
+
+Reason for NaN in schema 3: Stratum k = AMERICAN INDIAN OR ALASKA NATIVE can not be compared because there are only values for one treatment and one gender.  
+Reason for Error 4: 
+> For large sparse table (many strata) CMHTest will occasionally throw a Error in solve.default(AVA) because of singularity
+
+A solution for this error is offered by the forked version of the vcdPackage (**NOT PART OF THE CRAN PACKAGE**). _Link Github Issue_.
+
+## Odds Ratio
+
+```{r, echo = F}
+readRDS("~/CSRMLW/cmh/Results/R/table2.RDS")
+```
+
+## Homogenity Test
+
+```{r, echo = F}
+readRDS("~/CSRMLW/cmh/Results/R/table3.RDS")
+```
+
+
+We can see for cases where ... R and SAS deliver almost the same output. However, if xxx there appear differences. 
+
+# References
+
+https://online.stat.psu.edu/stat504/lesson/5/5.4/5.4.5  
+Book AGRESTI

@@ -1,7 +1,10 @@
+
 library(tidyverse)
 library(gt)
+library(janitor)
+library(readxl)
 
-interim_raw <- xlsx::read.xlsx(here::here('cmh/Docu/interim_update','cmhsummary.xlsx'), sheetIndex = 1) %>%
+interim_raw <- read_xlsx(here::here('cmh/Docu/interim_update','cmhsummary.xlsx'), sheet = 1) %>%
   janitor::clean_names()
 
 # remove the stats package entries so things are comparable
@@ -80,11 +83,11 @@ t1 <- part1 %>%
 # table 2
 # we want to present the info side by side, r vs sas, for the same statistic
 part2<- interim_raw1 %>%
-  filter(type == "M-H ") %>%
+  dplyr::filter(type == "M-H") %>%
   dplyr::select(schema, type, statistic, r_result) %>%
   pivot_wider(id_cols = c(schema, type), names_from = "statistic", values_from = "r_result", names_prefix = "r_")  %>%
-  bind_cols(interim_raw1 %>%
-              filter(type == "M-H ") %>%
+  bind_cols(interim_raw %>%
+              filter(type == "M-H") %>%
               dplyr::select(schema, type, statistic, sas_result) %>%
               pivot_wider(id_cols = c(schema, type), names_from = "statistic", values_from = "sas_result", names_prefix = "sas_") %>%
               dplyr::select(-c(type, schema))
@@ -206,6 +209,8 @@ t3 <- part3 %>%
   opt_align_table_header(align = "left")
 
 # view
-t1
+saveRDS(t1, "~/CSRMLW/cmh/Results/R/table1.RDS")
+saveRDS(t2, "~/CSRMLW/cmh/Results/R/table2.RDS")
+saveRDS(t3, "~/CSRMLW/cmh/Results/R/table3.RDS")
 t2
 t3
