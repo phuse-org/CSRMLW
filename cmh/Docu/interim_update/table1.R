@@ -208,7 +208,11 @@ t3 <- part3 %>%
   tab_header(title = md("**Breslow-Day Homogeneity Test of Odds Ratio**")) %>%
   opt_align_table_header(align = "left")
 
+
+
 # view
+t1
+
 saveRDS(t1, "~/CSRMLW/cmh/Results/R/table1.RDS")
 saveRDS(t2, "~/CSRMLW/cmh/Results/R/table2.RDS")
 saveRDS(t3, "~/CSRMLW/cmh/Results/R/table3.RDS")
