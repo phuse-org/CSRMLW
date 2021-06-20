@@ -212,9 +212,10 @@ t3 <- part3 %>%
 
 # view
 t1
+t2
+t3
 
 saveRDS(t1, "~/CSRMLW/cmh/Results/R/table1.RDS")
 saveRDS(t2, "~/CSRMLW/cmh/Results/R/table2.RDS")
 saveRDS(t3, "~/CSRMLW/cmh/Results/R/table3.RDS")
-t2
-t3
+
