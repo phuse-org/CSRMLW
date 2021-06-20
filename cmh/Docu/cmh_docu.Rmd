@@ -38,8 +38,8 @@ In order to follow a systematic approach and to cover the 2x2xK as well as the g
 | Number  | Schema |  Variables | Relevant Test | Description |   
 |---|---|---|---|---|
 |  1 | 2x2x2   | X = TRTP, Y = SEX, K = AGEGR1  | General Association | TRTP and AGEGR1 were limited to two categories, overall the the groups were rather balanced |   
-|   3| 2x2x3  | X = TRTP, Y = SEX, K = RACE  |  General Association |   Imbalanced?|
-|   6| 2x5x2  | X = TRTP, Y = AVAL, K = SEX  |  Row Means |   Filtered|
+|   3| 2x2x3  | X = TRTP, Y = SEX, K = RACE  |  General Association |   Gives back NaN in R because RACE is very imbalanced|
+|   6| 2x5x2  | X = TRTP, Y = AVAL, K = SEX  |  Row Means |   Compare Row Means results for R and SAS|
 |   9|  3x5x17 |X = TRTP, Y = AVAL, K = SITEID   | Row Means   | SITEID has many strata and provokes sparse groups, AVAL is ordinal, therefore row means statistic applies here  | 
 | 10 | 5x3x3  | X = AVAL, Y = AGEGR1, K = TRTP |  Correlation | X and Y are ordinal variables and therefore the correlation statistics has to be taken here |
 
@@ -101,11 +101,17 @@ CMHtest(Freq~X+Y|K,data=filtered_data, overall=TRUE)
 
 #### Forked Version - Solution for sparse data
 
-xxx
+To tackle the [issue with sparse data](https://github.com/friendly/vcdExtra/issues/3) it is recommended that a use of `solve()` is replaced with `MASS::ginv`. This was implemented in the forked version of vcdExtra which can be installed from here: 
+```{r}
+devtools::install_github("mstackhouse/vcdExtra")
+```
+
+However, also the forked version for the vcdExtra package works only until a certain level of sparsity. In case of our data, it still works if the data are stratified by the pooled Site ID (SITEGR1 - 11 unique values) whereas using the unpooled Site ID (SITEID - 17 unique values) also throws an error. 
+
 
 #### Bug 
 
-xxx
+Exploring the vcdExtra package in detail we realized that there seems to be a bug in the implementation which we would like to demonstrate here: 
 
 ### Epi Display package 
 
@@ -136,13 +142,14 @@ Here the results can be seen:
 ```{r, echo = F}
 readRDS("~/CSRMLW/cmh/Results/R/table1.RDS")
 ```
-
+  
+As it can be seen, there are two schemata where R does not provide any results:
 
 Reason for NaN in schema 3: Stratum k = AMERICAN INDIAN OR ALASKA NATIVE can not be compared because there are only values for one treatment and one gender.  
 Reason for Error 4: 
 > For large sparse table (many strata) CMHTest will occasionally throw a Error in solve.default(AVA) because of singularity
 
-A solution for this error is offered by the forked version of the vcdPackage (**NOT PART OF THE CRAN PACKAGE**). _Link Github Issue_.
+
 
 ## Odds Ratio
 
