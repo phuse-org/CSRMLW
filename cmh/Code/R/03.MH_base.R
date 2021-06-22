@@ -31,7 +31,7 @@ s5data_mh <- adcibc %>%
 # Schema 6
 s6data_mh <- adcibc %>%
   filter(TRTP != "Xanomeline High Dose") %>%
-  dplyr::select(x = TRTP, y = SEX, k = AVAL) %>%
+  dplyr::select(x = TRTP, k = SEX, y = AVAL) %>%
   mutate(Schema = 6)
 
 # Schema 7
@@ -83,4 +83,9 @@ results[7,] <- run_mantelhaen(s7data_mh) # error sample size in each stratum mus
 results[8,] <- run_mantelhaen(s8data_mh)
 results[9,] <- run_mantelhaen(s9data_mh) # error sample size in each stratum must be > 1
 results[10,] <- run_mantelhaen(s10data_mh)
+
+# Write results - for processing down the road
+r_base <- results
+save(r_base, file = here::here('cmh/results/R/r_base.Rdata'))
+
 

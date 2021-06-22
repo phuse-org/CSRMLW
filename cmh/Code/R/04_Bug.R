@@ -1,5 +1,7 @@
 # SAS Example:
 # Levels k = 2, x = 3, y = 2
+# We chose a non 2x2xk to illustrate this
+# a 2x2x2 would essentially mask the mixing up of results.
 
 # PROC FREQ data = all;
 #   weight count;

@@ -16,11 +16,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Cochran-Mantel-Haenszel Test - Background
 
-The CMH procedure tests for conditional independence in partial tables usually for a 2x2xK design. However, it can be generalized to IxJxK tables (Agresti). Depending on the nature of the variables, the number of degrees of freedom differs: 
+The CMH procedure tests for conditional independence in partial contingency tables (usually) for a 2x2xK design. However, it can be generalized to IxJxK tables (Agresti). 
 
-- general association statstic (X and Y are treated as nominal) results in (X-1) * (Y-1) dfs
-- row mean scores statistic (X is nominal and Y is ordinal) results in X-1 dfs
-- nonzero correlation statistic (X and Y ordinal) results in 1 df
+Depending on the `scale`  of the variables, the number of degrees of freedom differs: 
+
+- `general association` statistic (X and Y are treated as nominal) results in `(X-1) * (Y-1) dfs`
+- `row mean` scores statistic (X is nominal and Y is ordinal) results in `X-1 dfs`
+- `nonzero correlation` statistic (X and Y ordinal) results in `1 df`
 
 To be consistent between SAS and R, the following naming conventions are used when referring to variables below: 
 
@@ -47,12 +49,10 @@ In order to follow a systematic approach and to cover the 2x2xK as well as the g
 
 ## Data 
 
-For the further documentation the CDSIC data were used and pre-preocessed: 
+For the further documentation the CDSIC data were used and pre-processed: 
 
 ```{r, eval = FALSE}
-### how to get data 
 ### pre-filtering data 
-
 haven::read_xpt("https://github.com/phuse-org/TestDataFactory/raw/main/Updated/TDF_ADaM/adcibc.xpt") %>% 
   filter(EFFFL == 'Y' & ITTFL == 'Y', AVISITN == 8 & ANL01FL=='Y') 
 
@@ -61,12 +61,11 @@ haven::read_xpt("https://github.com/phuse-org/TestDataFactory/raw/main/Updated/T
 
 ## In SAS 
 
-Thr cmh test is calculated in SAS using the PROC FREQ, details can be found in the documentation:
-https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.3/statug/statug_freq_examples07.htm
-It outputs the chi square and the respective p-values, the odds ratios and the homogenity test by default. 
+The cmh test is calculated in SAS using the PROC FREQ procedure. By default, it outputs the chi square statistic, degrees of freedom and p-value for each of the three alternative hypothesis: `general association`, `row means differ`, and `nonzero correlation`.
+
+When the design of the contingency table is 2x2xK (i.e, X == 2 levels, Y == 2 levels, K >= 2 levels), the Mantel-Haenszel Common Odds Ratio (odds ratio estimate, 95% CI, P-value) and the Breslow-Day Test for Homogeneity of the Odds Ratios (chi-square statistic, degrees of freedom, P-value) are also output.
 
 ```{r, eval = FALSE}
-
 Proc freq data = filtered_data; 
 tables K * X * Y / cmh; 
 run; 
@@ -77,22 +76,33 @@ run;
 ## In R 
 
 We did not find any R package that delivers all the same measures as SAS at once. Therefore, we tried out multiple packages: 
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(magrittr)
+library(reactable)
+yes <- "\U2705"
+no <- "\U274C"
+tibble::tribble(
+  ~Package, ~`General Association`, ~`Row Means Differ`, ~`Nonzero Correlation`, ~`M-H Odds Ratio`, ~`Homogeneity Test`, ~Note,
+ "stats::mantelhaen.test()", yes, no, no, yes, no, "Works well for 2x2xK",
+ "vcdExtra::CMHtest()", yes,yes,yes,no,no,"Problems with sparsity, potential bug",
+ "epiDisplay::mhor()", no,no,no,yes,yes,"Note"
+) %>%
+  reactable::reactable(fullWidth = TRUE,defaultColDef = colDef(html = TRUE, align = "center"), columns = list(Note = colDef(width = 120), Package = colDef(width = 170)))
+```
 
-- **base R - mantelhaen functon** --> works well for 2x2xK schemata where X and Y are nominal, delivers χ2, p-value and odds ratios
-- **vcdExtra package**--> delivers all three types of associations, no odds ratio, has problems with sparse data & is bugged
-- **epiDisplay package** --> gives back the odds ratios
 
+### mantelhaen.test()
 
-### Mantelhaen functiom
+This is included in a base installation of R, as part of the stats package. Requires inputting data as a *table*.
 
 ```{r, eval = F}
 mantelhaen.test(x = data$x, y = data$y, z = data$k)
 ```
 
 
-### VCD Extra package 
+### CMHtest()
 
-The vcdExtra package provides results for the generalized CMH test, for each of the three model it outputs the Chi-square value and the respective p-values. 
+The vcdExtra package provides results for the generalized CMH test, for each of the three model it outputs the Chi-square value and the respective p-values. Flexible data input methods available: *table* or *formula* (aggregated level data in a data frame).
 
 ```{r, eval = FALSE}
 library(vcdExtra)
@@ -102,7 +112,7 @@ CMHtest(Freq~X+Y|K,data=filtered_data, overall=TRUE)
 #### Forked Version - Solution for sparse data
 
 To tackle the [issue with sparse data](https://github.com/friendly/vcdExtra/issues/3) it is recommended that a use of `solve()` is replaced with `MASS::ginv`. This was implemented in the forked version of vcdExtra which can be installed from here: 
-```{r}
+```{r, eval = FALSE}
 devtools::install_github("mstackhouse/vcdExtra")
 ```
 
@@ -111,39 +121,86 @@ However, also the forked version for the vcdExtra package works only until a cer
 
 #### Bug 
 
-Exploring the vcdExtra package in detail we realized that there seems to be a bug in the implementation which we would like to demonstrate here: 
+Exploring the vcdExtra package in detail we realized that there seems to be a bug in the implementation which we would like to highlight here.
+
+Using an independent data example (3x2x2), we first ran the CMH test through SAS and obtained the following:
+
+```{r}
+# Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+# Statistic    Alternative Hypothesis    DF       Value      Prob
+# ---------------------------------------------------------------
+#   1        Nonzero Correlation        1      6.4586    0.0110
+#   2        Row Mean Scores Differ     2     26.0278    <.0001
+#   3        General Association        2     26.0278    <.0001
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+test_eg <- data.frame(x = c('low','low','low','low','med','med','med','med', 'high','high','high','high'),
+                      k = c('yes','yes','no','no', 'yes','yes','no','no','yes','yes','no','no'),
+                      y = c('yes','no', 'yes','no','yes','no','yes','no','yes','no','yes','no'),
+                      Freq = c(11,43,42,169,14,104,20,132,8,196,2,59))
+
+library(vcdExtra)
+```
+
+When we specify the analysis in R this way, we get the following results:
+```{r}
+CMHtest(Freq~x+y|k, data=test_eg, overall=TRUE, details=TRUE)$ALL$table
+```
+
+By default, all 3 tests (and a 4th) are output. The results seem to match.
+
+When we specify the analysis using an explicit *type* argument, we get the following results:
+```{r}
+CMHtest(Freq~x+y|k, data=test_eg, overall=TRUE, details=TRUE, type = "ALL")$ALL$table
+```
+
+While we've essentially asked for everything (i.e. the default), albiet explicitly, the results do not match. The degrees of freedom seem to be mismatched with results in wrong p-values (if we assume SAS is the gold standard)
+
+
+Similarly, if we specify we would *only* like certain tests returned, the results seem dependent on the order of specification:
+
+```{r}
+# Order: cor, general, rmeans
+CMHtest(Freq~x+y|k, data=test_eg, overall=TRUE, details=TRUE, types=c("cor","general","rmeans"))$ALL$table
+```
+
+```{r}
+# Order: rmeans, general, cor
+CMHtest(Freq~x+y|k, data=test_eg, overall=TRUE, details=TRUE, types=c("rmeans","general","cor"))$ALL$table
+```
+
+Impact: In the event of a 2x2xK design, all 3 test statistics, degrees of freedom and p-values are the same. Therefore, specifying a 2x2xK analysis any of the ways above results in correct "answer", though they are technically mixed up. 
+
+This is why we chose as a 3x2x2, so we can clearly where things are mixed up. 
+
+We are planning to submit an issue to the vcdExtra github for the author's review.
 
 ### Epi Display package 
 
-To get the common odds ration another package has to be used in R...
+To get the M-H common odds ratio and the homogeneity test, the epiDisplay package can be used. 
 
 ```{r, eval = FALSE}
 library(epiDisplay) 
-
 mhor(x,y,k, graph = FALSE)
 ```
-
-
-### Homogenity Test
-
-```{r, eval = FALSE}
-# add code here
-```
-
-
 
 
 # Results
 
 Here the results can be seen: 
 
-
 ## CMH Statistics 
-```{r, echo = F}
-readRDS("~/CSRMLW/cmh/Results/R/table1.RDS")
+```{r, echo = F, warning = FALSE}
+readRDS(here::here('cmh/Docu/interim_update','table1b.RDS'))
 ```
   
+  
 As it can be seen, there are two schemata where R does not provide any results:
+
+```{r, echo = F}
+readRDS(here::here('cmh/Docu/interim_update','table1a.RDS'))
+```
 
 Reason for NaN in schema 3: Stratum k = AMERICAN INDIAN OR ALASKA NATIVE can not be compared because there are only values for one treatment and one gender.  
 Reason for Error 4: 
@@ -152,21 +209,37 @@ Reason for Error 4:
 
 
 ## Odds Ratio
-
+Only applicable to 2x2xK designs.
 ```{r, echo = F}
-readRDS("~/CSRMLW/cmh/Results/R/table2.RDS")
+readRDS(here::here('cmh/Docu/interim_update','table2.RDS'))
 ```
 
 ## Homogenity Test
-
+Only applicable to 2x2xK designs.
 ```{r, echo = F}
-readRDS("~/CSRMLW/cmh/Results/R/table3.RDS")
+readRDS(here::here('cmh/Docu/interim_update','table3.RDS'))
 ```
-
-
 We can see for cases where ... R and SAS deliver almost the same output. However, if xxx there appear differences. 
 
-# References
 
+# References
+Accessible Summary:
 https://online.stat.psu.edu/stat504/lesson/5/5.4/5.4.5  
-Book AGRESTI
+
+An Introduction to Categorical Data Analysis 2nd Edition (Agresti):
+http://users.stat.ufl.edu/~aa/
+
+SAS documentation (Specification):
+https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.3/statug/statug_freq_examples07.htm
+
+SAS documentation (Theoretical Basis + Formulas):
+https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/procstat/procstat_freq_details92.htm
+
+Original Paper 1:
+https://doi.org/10.2307%2F3001616
+
+Original Paper 2:
+https://doi.org/10.1093/jnci/22.4.719
+
+
+ 

@@ -1,0 +1,111 @@
+﻿Schema,Type,Statistic,R-Result,R-Package,SAS-Result
+1,Correlation,Chi-Square,0.0176704,vcdExtra,0.017670400
+1,Correlation,df,1,vcdExtra,1
+1,Correlation,P-Value,0.8942487,vcdExtra,0.89424870
+1,Row Means,Chi-Square,0.0176704,vcdExtra,0.017670400
+1,Row Means,df,1,vcdExtra,1
+1,Row Means,P-Value,0.8942487,vcdExtra,0.89424870
+1,General Association,Chi-Square,0.0176704,vcdExtra,0.017670400
+1,General Association,df,1,vcdExtra,1
+1,General Association,P-Value,0.8942487,vcdExtra,0.89424870
+1,M-H ,OR,0.955,epiDisplay,0.9550959
+1,M-H ,LCL,0.487,epiDisplay,0.4865116
+1,M-H ,UCL,1.87,epiDisplay,1.874998
+1,M-H ,P-Value,0.894,epiDisplay,
+1,Homogeneity Test,Chi-Square,0.97,epiDisplay,1.004029
+1,Homogeneity Test,df,1,epiDisplay,1
+1,Homogeneity Test,P-Value,0.325,epiDisplay,0.31633757
+1,General Association,Chi-Square,0.01767,stats,
+1,General Association,df,1,stats,
+1,General Association,P-Value,0.8942,stats,
+1,General Association,OR,0.9550959,stats,
+1,General Association,LCL,0.4865116,stats,
+1,General Association,UCL,1.8749978,stats,
+3,Correlation,Chi-Square,NaN,vcdExtra,0.002787130
+3,Correlation,df,1,vcdExtra,1
+3,Correlation,P-Value,NaN,vcdExtra,0.95789662
+3,Row Means,Chi-Square,NaN,vcdExtra,2.386069847
+3,Row Means,df,2,vcdExtra,2
+3,Row Means,P-Value,NaN,vcdExtra,0.30329938
+3,General Association,Chi-Square,NaN,vcdExtra,2.386069847
+3,General Association,df,2,vcdExtra,2
+3,General Association,P-Value,NaN,vcdExtra,0.30329938
+3,M-H ,OR,ERROR CODE 2,epiDisplay,NOT RETURNED
+3,M-H ,LCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+3,M-H ,UCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+3,M-H ,P-Value,ERROR CODE 2,epiDisplay,
+3,Homogeneity Test,Chi-Square,ERROR CODE 2,epiDisplay,NOT RETURNED
+3,Homogeneity Test,df,ERROR CODE 2,epiDisplay,NOT RETURNED
+3,Homogeneity Test,P-Value,ERROR CODE 2,epiDisplay,NOT RETURNED
+3,General Association,Chi-Square,ERROR CODE 3,stats,
+3,General Association,df,ERROR CODE 3,stats,
+3,General Association,P-Value,ERROR CODE 3,stats,
+3,General Association,OR,ERROR CODE 3,stats,
+3,General Association,LCL,ERROR CODE 3,stats,
+3,General Association,UCL,ERROR CODE 3,stats,
+9,Correlation,Chi-Square,ERROR CODE 4,vcdExtra,0.085443119
+9,Correlation,df,ERROR CODE 4,vcdExtra,1
+9,Correlation,P-Value,ERROR CODE 4,vcdExtra,0.77005225
+9,Row Means,Chi-Square,ERROR CODE 4,vcdExtra,2.476313667
+9,Row Means,df,ERROR CODE 4,vcdExtra,2
+9,Row Means,P-Value,ERROR CODE 4,vcdExtra,0.28991809
+9,General Association,Chi-Square,ERROR CODE 4,vcdExtra,7.033878442
+9,General Association,df,ERROR CODE 4,vcdExtra,8
+9,General Association,P-Value,ERROR CODE 4,vcdExtra,0.53298189
+9,M-H ,OR,ERROR CODE 2,epiDisplay,NOT RETURNED
+9,M-H ,LCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+9,M-H ,UCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+9,M-H ,P-Value,ERROR CODE 2,epiDisplay,
+9,Homogeneity Test,Chi-Square,ERROR CODE 2,epiDisplay,NOT RETURNED
+9,Homogeneity Test,df,ERROR CODE 2,epiDisplay,NOT RETURNED
+9,Homogeneity Test,P-Value,ERROR CODE 2,epiDisplay,NOT RETURNED
+9,General Association,Chi-Square,ERROR CODE 3,stats,
+9,General Association,df,ERROR CODE 3,stats,
+9,General Association,P-Value,ERROR CODE 3,stats,
+9,General Association,OR,ERROR CODE 3,stats,
+9,General Association,LCL,ERROR CODE 3,stats,
+9,General Association,UCL,ERROR CODE 3,stats,
+10,Correlation,Chi-Square,0.8715295,vcdExtra,2.738160852
+10,Correlation,df,1,vcdExtra,1
+10,Correlation,P-Value,0.3505322,vcdExtra,0.09797747
+10,Row Means,Chi-Square,3.044527,vcdExtra,4.407010917
+10,Row Means,df,4,vcdExtra,4
+10,Row Means,P-Value,0.5504018,vcdExtra,0.35371641
+10,General Association,Chi-Square,5.730538,vcdExtra,5.730538193
+10,General Association,df,8,vcdExtra,8
+10,General Association,P-Value,0.6773861,vcdExtra,0.67738613
+10,M-H ,OR,ERROR CODE 2,epiDisplay,NOT RETURNED
+10,M-H ,LCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+10,M-H ,UCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+10,M-H ,P-Value,ERROR CODE 2,epiDisplay,
+10,Homogeneity Test,Chi-Square,ERROR CODE 2,epiDisplay,NOT RETURNED
+10,Homogeneity Test,df,ERROR CODE 2,epiDisplay,NOT RETURNED
+10,Homogeneity Test,P-Value,ERROR CODE 2,epiDisplay,NOT RETURNED
+10,General Association,Chi-Square,5.7305,stats,
+10,General Association,df,8,stats,
+10,General Association,P-Value,0.6774,stats,
+10,General Association,OR,NOT RETURNED,stats,
+10,General Association,LCL,NOT RETURNED,stats,
+10,General Association,UCL,NOT RETURNED,stats,
+6,Correlation,Chi-Square,0.13012,vcdExtra,1.1472
+6,Correlation,df,1,vcdExtra,1
+6,Correlation,P-Value,0.71831,vcdExtra,0.2841
+6,Row Means,Chi-Square,0.13012,vcdExtra,1.1472
+6,Row Means,df,1,vcdExtra,1
+6,Row Means,P-Value,0.71831,vcdExtra,0.2841
+6,General Association,Chi-Square,1.5771,vcdExtra,2.5672
+6,General Association,df,4,vcdExtra,4
+6,General Association,P-Value,0.81397,vcdExtra,0.6326
+6,M-H ,OR,ERROR CODE 2,epiDisplay,NOT RETURNED
+6,M-H ,LCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+6,M-H ,UCL,ERROR CODE 2,epiDisplay,NOT RETURNED
+6,M-H ,P-Value,ERROR CODE 2,epiDisplay,
+6,Homogeneity Test,Chi-Square,ERROR CODE 2,epiDisplay,NOT RETURNED
+6,Homogeneity Test,df,ERROR CODE 2,epiDisplay,NOT RETURNED
+6,Homogeneity Test,P-Value,ERROR CODE 2,epiDisplay,NOT RETURNED
+6,General Association,Chi-Square,ERROR CODE 3,stats,
+6,General Association,df,ERROR CODE 3,stats,
+6,General Association,P-Value,ERROR CODE 3,stats,
+6,General Association,OR,ERROR CODE 3,stats,
+6,General Association,LCL,ERROR CODE 3,stats,
+6,General Association,UCL,ERROR CODE 3,stats,

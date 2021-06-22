@@ -62,7 +62,7 @@ s5data <- adcibc %>%
 s6data <- adcibc %>%
   filter(TRTP != "Xanomeline High Dose") %>%
   count(TRTP, SEX, AVAL) %>%
-  dplyr::select(Freq = n, x = TRTP, y = SEX, k = AVAL) %>%
+  dplyr::select(Freq = n, x = TRTP, k = SEX, y = AVAL) %>%
   mutate(Schema = 6)
 
 # Schema 7
@@ -124,10 +124,6 @@ cleaned_results <- all_results %>%
   filter(Hypothesis != "C") %>%
   mutate_all(as.character)
 
-# Write results
-xlsx::write.xlsx(cleaned_results,
-                 file = here::here("cmh/Results/R","R_3HA_vcdExtra_forked.xlsx"),
-                 sheetName = "R_Results_1")
 
 # Write results - for processing down the road
 r_3ha <- cleaned_results
