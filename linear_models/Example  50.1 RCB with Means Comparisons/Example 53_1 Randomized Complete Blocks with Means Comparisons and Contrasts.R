@@ -35,23 +35,23 @@ summary(plants)
 # Test for a significant difference in PULSE between values of SEX by 
 # running a one way ANOVA using the model PULSE = SEX. Tidy the results 
 # using the tidy() function.
-glm1 <- aov(StemLength ~ type + block, data = plants) %>%
+aov1 <- aov(StemLength ~ type + block, data = plants) %>%
   print()
 
-tidy_glm1 <- 
-  tidy(glm1) %>% 
+tidy_aov1 <- 
+  tidy(aov1) %>% 
   print()
 
-summary_glm1 <- 
-  summary(glm1)  %>% 
+summary_aov1 <- 
+  summary(aov1)  %>% 
   print()
 
-augment_glm1 <- 
-  augment(glm1) %>% 
+augment_aov1 <- 
+  augment(aov1) %>% 
   print()
 
-glance_glm1 <- 
-  glance(glm1)  %>% 
+glance_aov1 <- 
+  glance(aov1)  %>% 
   print()
 
 
