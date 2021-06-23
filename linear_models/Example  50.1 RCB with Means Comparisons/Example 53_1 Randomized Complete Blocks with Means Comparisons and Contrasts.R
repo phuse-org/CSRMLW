@@ -38,6 +38,10 @@ summary(plants)
 aov1 <- aov(StemLength ~ type + block, data = plants) %>%
   print()
 
+# Using lm() function
+lm1 <- lm(StemLength ~ type + block, data = plants) %>%
+  print()
+
 tidy_aov1 <- 
   tidy(aov1) %>% 
   print()
@@ -54,10 +58,6 @@ glance_aov1 <-
   glance(aov1)  %>% 
   print()
 
-
-# Using lm() function
-lm1 <- lm(StemLength ~ type + block, data = plants) %>%
-  print()
 
 tidy_lm1 <- 
   tidy(lm1) %>% 
