@@ -14,9 +14,11 @@
       MISC:                                                       
 -----------------------------------------------------------------*/
 
+libname ex50_2 "C:\Users\User\OneDrive - ManpowerGroup\_ExperisStuff\PHUSE\CSRMLW\CSRMLW\linear_models\Example  50.2 Regression with Mileage Data";
+
 /* Regression with Mileage Data --------------------------------*/
 title 'Gasoline Mileage Experiment';
-data mileage;
+data ex50_2.mileage;
    input mph mpg @@;
    datalines;
 20 15.4
@@ -26,7 +28,16 @@ data mileage;
 55   .
 60 24.8
 ;
-proc glm;
+run;
+
+ods trace on;
+
+ods output overallanova=ex50_2.overallanova;
+ods output parameterestimates=ex50_2.parameterestimates;
+ods output predictedvalues=ex50_2.predictedvalues;
+
+
+proc glm data=ex50_2.mileage;
    model mpg=mph mph*mph / p clm;
 run;
 quit;
