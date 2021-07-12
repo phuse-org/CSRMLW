@@ -28,7 +28,8 @@ plants <- tribble(
 "Webster", "1",  32.5,
 "Webster", "2",  31.1,
 "Webster", "3",  29.7
-)
+) %>% 
+  mutate(type = factor(type))
 
 summary(plants)
 
@@ -73,5 +74,35 @@ augment_lm1 <-
 
 glance_lm1 <- 
   glance(lm1)  %>% 
+  print()
+
+
+plants2 <-
+  plants
+
+type_contrasts = contrasts(plants2$type)
+type_contrasts = type_contrasts[,1:2]
+type_contrasts[,1] = c(-1, -1, -1, -1, 6, -1, -1)
+type_contrasts[,2] = c(0, 0, 1, -1, 0, 0, 0)
+contrasts(plants2$type) = type_contrasts
+
+# Using lm() function
+lm2 <- lm(StemLength ~ type + block, data = plants2) %>%
+  print()
+
+tidy_lm2 <- 
+  tidy(lm2) %>% 
+  print()
+
+summary_lm2 <- 
+  summary(lm2)  %>% 
+  print()
+
+augment_lm2 <- 
+  augment(lm2) %>% 
+  print()
+
+glance_lm2 <- 
+  glance(lm2)  %>% 
   print()
 

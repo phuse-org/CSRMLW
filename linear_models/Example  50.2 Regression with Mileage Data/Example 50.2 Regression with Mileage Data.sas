@@ -29,3 +29,4 @@ data mileage;
 proc glm;
    model mpg=mph mph*mph / p clm;
 run;
+quit;
