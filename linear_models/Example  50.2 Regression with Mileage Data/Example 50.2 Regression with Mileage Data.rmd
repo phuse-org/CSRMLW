@@ -1,0 +1,89 @@
+
+---
+title: "Differences between SAS and R - Linear Models"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: simplex
+    highlight: kate
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: false
+  #  code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(haven)
+library(broom)
+library(tidyverse)
+library(kableExtra)
+library(DT)
+
+datapath <- "C:/Users/User/OneDrive - ManpowerGroup/_ExperisStuff/PHUSE/CSRMLW/CSRMLW/linear_models/Example  50.2 Regression with Mileage Data/"
+
+mileage <- 
+  read_sas(paste0(datapath,"mileage.sas7bdat")) %>% 
+  mutate(mph_sq = mph^2)
+
+sas_oaanova <- read_sas(paste0(datapath, "overallanova.sas7bdat"))
+sas_parameterestimates <- read_sas(paste0(datapath, "parameterestimates.sas7bdat"))
+sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
+
+# changed block to be a character variable so the aov()
+# function treated it as a class variable.
+# mileage <- tribble(
+#   ~mph, ~mpg,  
+#   20, 
+#   15.4,
+#   30, 
+#   20.2,
+#   40 ,
+#   25.7,
+#   50 ,
+#   26.2,  
+#   50 ,
+#   26.6,  
+#   50 ,
+#   27.4,
+#   55   ,
+#   NA,
+#   60 ,
+#   24.8
+#   ) %>% 
+#   mutate(mph_sq = mph^2)
+
+```
+
+## Linear Models Examples from Selected SAS Examples
+
+### The Data
+#### HTML Table - Using DT
+```{r DT-output, echo = TRUE}
+mileage %>% DT::datatable()
+```
+
+### The Linear Model
+#### HTML Table - Using DT
+```{r lm -output, echo = TRUE}
+lm1 <- lm(mpg ~ mph + mph_sq, data = mileage) %>%
+  print()
+
+tidy(lm1) %>% DT::datatable()
+
+sas_oaanova %>% DT::datatable()
+sas_parameterestimates %>% DT::datatable()
+
+summary_lm1 <- summary(lm1)
+tidy(summary_lm1) %>% DT::datatable()
+
+augment_lm1 <- augment(lm1)
+augment_lm1 %>% DT::datatable()
+
+sas_predictedvalues %>% DT::datatable()
+
+glance_lm1 <- glance(lm1)
+glance_lm1 %>% DT::datatable()
+```
+
