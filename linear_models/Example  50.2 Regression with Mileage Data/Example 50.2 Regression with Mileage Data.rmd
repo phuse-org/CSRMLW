@@ -1,6 +1,6 @@
 
 ---
-title: "Differences between SAS and R - Linear Models"
+title: "Comparing SAS and R - Linear Models"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -56,7 +56,7 @@ sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
 
 ```
 
-## Linear Models Examples from Selected SAS Examples
+## Example 50.2 - Regression with Mileage Data
 
 ### The Data
 #### HTML Table - Using DT
@@ -64,17 +64,41 @@ sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
 mileage %>% DT::datatable()
 ```
 
-### The Linear Model
-#### HTML Table - Using DT
-```{r lm -output, echo = TRUE}
+### Parameter Estimates
+#### From R
+```{r  R Parameter Estimates, echo = TRUE}
 lm1 <- lm(mpg ~ mph + mph_sq, data = mileage) %>%
   print()
 
 tidy(lm1) %>% DT::datatable()
-
-sas_oaanova %>% DT::datatable()
+```
+#### From SAS
+```{r lm -SAS Parameter Estimates, echo = TRUE}
 sas_parameterestimates %>% DT::datatable()
+```
 
+#### Parameter Estimate Differences |R - SAS|
+```{r lm -SAS Parameter Estimates Diff, echo = FALSE}
+r_parameterestimates <-
+  tidy(lm1)  %>% 
+  mutate(Parameter = case_when(term == "(Intercept)" ~ "Intercept",
+                               term == "mph_sq" ~ "mph*mph",
+                               TRUE ~ term)) %>% 
+  select(-term)
+  
+
+sas_parameterestimates %>% 
+  inner_join(r_parameterestimates, by = c("Parameter"="Parameter")) %>%
+  mutate(diff_estimate = abs(estimate - Estimate),
+         diff_stderr = abs(std.error - StdErr),
+         diff_tvalue = abs(statistic - tValue),
+         diff_probt  = abs(p.value - Probt)) %>% 
+  select(diff_estimate, diff_stderr, diff_tvalue, diff_probt) %>% 
+  DT::datatable()
+```
+
+```{r lm -output, echo = TRUE}
+sas_oaanova %>% DT::datatable()
 summary_lm1 <- summary(lm1)
 tidy(summary_lm1) %>% DT::datatable()
 
