@@ -4,8 +4,8 @@ title: "Comparing SAS and R - Linear Models"
 date: "`r Sys.Date()`"
 output:
   html_document:
-    theme: simplex
-    highlight: kate
+    theme: lumen
+    highlight: default
     toc: true
     toc_depth: 3
     toc_float: true
@@ -99,8 +99,6 @@ sas_parameterestimates %>%
 
 ```{r lm -output, echo = TRUE}
 sas_oaanova %>% DT::datatable()
-summary_lm1 <- summary(lm1)
-tidy(summary_lm1) %>% DT::datatable()
 
 augment_lm1 <- augment(lm1)
 augment_lm1 %>% DT::datatable()
