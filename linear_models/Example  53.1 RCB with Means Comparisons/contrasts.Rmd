@@ -1,0 +1,42 @@
+---
+title: "Contrasts in R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+levels(iris$Species)
+contr.treatment(levels(iris$Species))
+contr.SAS(levels(iris$Species))
+```
+
+```{r}
+contr.sum(levels(iris$Species))
+contr.helmert(levels(iris$Species))
+contr.poly(levels(iris$Species))
+```
+```{r}
+#model.matrix( ~ Species, iris, contrast.arg = list(Species = contr.poly))
+model.matrix(Sepal.Length ~ Species - 1, iris, contrast.arg = contr.poly)
+
+```
+
+```{r}
+summary(lm(Sepal.Length ~ Species, iris, contrasts = list(Species = contr.treatment)))
+```
+
+```{r}
+contr.custom <- function(n, contrasts = TRUE, sparse = FALSE) {
+  if (!contrasts) {
+    stop("Only contrasts = TRUE is supported")
+  }
+  if (sparse) {
+    stop("Only dense contrasts are supported (sparse = FALSE)")
+  }
+}
+```

@@ -97,14 +97,44 @@ sas_parameterestimates %>%
   DT::datatable()
 ```
 
-```{r lm -output, echo = TRUE}
-sas_oaanova %>% DT::datatable()
+### Predicted Values
+#### From R
+```{r lm - R Predictions, echo = TRUE}
 
 augment_lm1 <- augment(lm1)
 augment_lm1 %>% DT::datatable()
+```
+
+#### From SAS
+```{r lm - SAS Predictions, echo = TRUE}
 
 sas_predictedvalues %>% DT::datatable()
 
+```
+
+
+#### Predition Differences |R - SAS|
+```{r lm - Prediction Differences, echo = FALSE}
+
+r_predictedvalues <-
+  augment_lm1  %>% 
+  mutate(Observation = as.numeric(.rownames)) %>% 
+  select(Observation, mpg, mph, .fitted, .resid)
+  
+
+sas_predictedvalues %>% 
+  full_join(r_predictedvalues, by = c("Observation"="Observation")) %>%
+  mutate(diff_fitted = abs(.fitted - Predicted),
+         diff_resid = abs(.resid - Residual)) %>% 
+  select(Observation, mpg, mph, diff_fitted, diff_resid) %>% 
+  DT::datatable()
+
+```
+
+
+#### yet to do
+```{r lm - other, echo = TRUE}
+sas_oaanova %>% DT::datatable()
 glance_lm1 <- glance(lm1)
 glance_lm1 %>% DT::datatable()
 ```
