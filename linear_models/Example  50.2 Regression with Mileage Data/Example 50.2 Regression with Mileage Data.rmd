@@ -102,7 +102,23 @@ sas_parameterestimates %>%
 ```{r lm - R Predictions, echo = TRUE}
 
 augment_lm1 <- augment(lm1)
-augment_lm1 %>% DT::datatable()
+
+
+r_fitcl <- as.data.frame(predict(lm1, interval="confidence"))  %>% 
+  rownames_to_column(var="Observationc") %>%
+  mutate(Observation = as.numeric(Observationc)) %>% 
+  select(-fit, -Observationc) 
+
+r_predictedvalues <-
+  augment_lm1 %>% 
+  mutate(Observation = as.numeric(.rownames)) %>% 
+  full_join(r_fitcl, by = c("Observation"="Observation")) %>%  
+  select(Observation, mpg, mph, .fitted, .resid, lwr, upr) 
+
+r_predictedvalues %>% 
+  DT::datatable()
+
+
 ```
 
 #### From SAS
@@ -112,21 +128,18 @@ sas_predictedvalues %>% DT::datatable()
 
 ```
 
-
 #### Predition Differences |R - SAS|
 ```{r lm - Prediction Differences, echo = FALSE}
 
-r_predictedvalues <-
-  augment_lm1  %>% 
-  mutate(Observation = as.numeric(.rownames)) %>% 
-  select(Observation, mpg, mph, .fitted, .resid)
-  
 
 sas_predictedvalues %>% 
   full_join(r_predictedvalues, by = c("Observation"="Observation")) %>%
   mutate(diff_fitted = abs(.fitted - Predicted),
-         diff_resid = abs(.resid - Residual)) %>% 
-  select(Observation, mpg, mph, diff_fitted, diff_resid) %>% 
+         diff_resid = abs(.resid - Residual),
+         diff_lowercl = abs(lwr - LowerCL),
+         diff_uppercl = abs(upr - UpperCL)) %>% 
+  select(Observation, mpg, mph, diff_fitted, diff_resid, 
+         diff_lowercl, diff_uppercl) %>% 
   DT::datatable()
 
 ```
