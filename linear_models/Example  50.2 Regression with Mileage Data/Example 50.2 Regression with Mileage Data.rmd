@@ -58,6 +58,8 @@ sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
 
 ```
 
+# glm()
+
 ## Example 50.2 - Regression with Mileage Data
 
 ### The Data
@@ -86,7 +88,7 @@ lm1 <- lm(mpg ~ mph + mph_sq, data = mileage)
 ### Fit Statistics
 #### From R
 ```{r  R Fit Statistics, echo = TRUE}
-glance_lm1 %>% DT::datatable()
+glance(lm1) %>% DT::datatable()
 ```
 #### From SAS
 ```{r lm -SAS Fit Statistics, echo = TRUE}
@@ -108,8 +110,7 @@ sas_oaanova %>% DT::datatable()
 ### Parameter Estimates
 #### From R
 ```{r  R Parameter Estimates, echo = TRUE}
-lm1 <- lm(mpg ~ mph + mph_sq, data = mileage) %>%
-  print()
+lm1 <- lm(mpg ~ mph + mph_sq, data = mileage) 
 
 tidy(lm1) %>% DT::datatable()
 ```
