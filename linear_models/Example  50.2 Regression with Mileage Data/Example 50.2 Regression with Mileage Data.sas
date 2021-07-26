@@ -20,6 +20,7 @@ libname ex50_2 "C:\Users\User\OneDrive - ManpowerGroup\_ExperisStuff\PHUSE\CSRML
 title 'Gasoline Mileage Experiment';
 data ex50_2.mileage;
    input mph mpg @@;
+   * mph_sq = mph*mph;
    datalines;
 20 15.4
 30 20.2
@@ -41,3 +42,4 @@ proc glm data=ex50_2.mileage;
    model mpg=mph mph*mph / p clm;
 run;
 quit;
+
