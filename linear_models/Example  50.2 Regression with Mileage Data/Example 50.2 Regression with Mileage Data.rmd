@@ -27,9 +27,11 @@ mileage <-
   read_sas(paste0(datapath,"mileage.sas7bdat")) %>% 
   mutate(mph_sq = mph^2)
 
+sas_fitstatistics <- read_sas(paste0(datapath, "fitstatistics.sas7bdat"))
 sas_oaanova <- read_sas(paste0(datapath, "overallanova.sas7bdat"))
 sas_parameterestimates <- read_sas(paste0(datapath, "parameterestimates.sas7bdat"))
 sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
+
 
 # changed block to be a character variable so the aov()
 # function treated it as a class variable.
@@ -62,6 +64,45 @@ sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
 #### HTML Table - Using DT
 ```{r DT-output, echo = TRUE}
 mileage %>% DT::datatable()
+```
+
+### Model call
+#### From R
+```{r  R Model, echo = TRUE}
+lm1 <- lm(mpg ~ mph + mph_sq, data = mileage) 
+```
+
+#### From SAS
+```{r  SAS Model, echo = TRUE}
+# ods output overallanova=ex50_2.overallanova;
+# ods output parameterestimates=ex50_2.parameterestimates;
+# ods output predictedvalues=ex50_2.predictedvalues;
+# ods output fitstatistics=ex50_2.fitstatistics;
+# proc glm data=ex50_2.mileage;
+#    model mpg=mph mph*mph / p clm;
+# run;
+# quit;
+```
+### Fit Statistics
+#### From R
+```{r  R Fit Statistics, echo = TRUE}
+glance_lm1 %>% DT::datatable()
+```
+#### From SAS
+```{r lm -SAS Fit Statistics, echo = TRUE}
+sas_fitstatistics %>% DT::datatable()
+```
+
+### ANOVA Summary
+#### From R
+```{r  R ANOVA Summary, echo = TRUE}
+glance(lm1) %>% 
+  DT::datatable()
+```
+
+#### From SAS
+```{r  SAS ANOVA Summary, echo = TRUE}
+sas_oaanova %>% DT::datatable()
 ```
 
 ### Parameter Estimates
@@ -145,10 +186,5 @@ sas_predictedvalues %>%
 ```
 
 
-#### yet to do
-```{r lm - other, echo = TRUE}
-sas_oaanova %>% DT::datatable()
-glance_lm1 <- glance(lm1)
-glance_lm1 %>% DT::datatable()
-```
+
 
