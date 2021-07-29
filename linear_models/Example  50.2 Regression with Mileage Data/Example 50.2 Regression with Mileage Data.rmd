@@ -58,7 +58,7 @@ sas_predictedvalues <- read_sas(paste0(datapath, "predictedvalues.sas7bdat"))
 
 ```
 
-# glm()
+#### glm()
 
 ## Example 50.2 - Regression with Mileage Data
 
