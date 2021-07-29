@@ -36,8 +36,7 @@ ods trace on;
 ods output overallanova=ex50_2.overallanova;
 ods output parameterestimates=ex50_2.parameterestimates;
 ods output predictedvalues=ex50_2.predictedvalues;
-
-
+ods output fitstatistics=ex50_2.fitstatistics;
 proc glm data=ex50_2.mileage;
    model mpg=mph mph*mph / p clm;
 run;
