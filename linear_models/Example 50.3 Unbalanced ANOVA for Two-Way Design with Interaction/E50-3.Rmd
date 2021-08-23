@@ -1,0 +1,103 @@
+---
+title: "Example 50.3"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(tidyverse, broom, emmeans, rstatix, knitr)
+
+df_sas <-
+  list(
+    tibble(drug = 1, disease = 1, y = c(42, 44, 36, 13, 19, 22)),
+    tibble(drug = 1, disease = 2, y = c(33, NA, 26, NA, 33, 21)),
+    tibble(drug = 1, disease = 3, y = c(31, -3, NA, 25, 25, 24)),
+    tibble(drug = 2, disease = 1, y = c(28, NA, 23, 34, 42, 13)),
+    tibble(drug = 2, disease = 2, y = c(NA, 34, 33, 31, NA, 36)),
+    tibble(drug = 2, disease = 3, y = c( 3, 26, 28, 32,  4, 16)),
+    tibble(drug = 3, disease = 1, y = c(NA, NA,  1, 29, NA, 19)),
+    tibble(drug = 3, disease = 2, y = c(NA, 11,  9,  7,  1, -6)),
+    tibble(drug = 3, disease = 3, y = c(21,  1, NA,  9,  3, NA)),
+    tibble(drug = 4, disease = 1, y = c(24, NA,  9, 22, -2, 15)),
+    tibble(drug = 4, disease = 2, y = c(27, 12, 12, -5, 16, 15)),
+    tibble(drug = 4, disease = 3, y = c(22,  7, 25,  5, 12, NA))) %>%
+  bind_rows() %>%
+  mutate(across(c(drug, disease), factor))
+```
+
+## Introduction
+
+In this example, we're looking at [Unbalanced ANOVA for Two-Way Design with Interactions](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.4/statug/statug_glm_examples03.htm).  We'll be comparing the output from SAS with R.
+
+## Data Summary
+
+```{r}
+df_sas %>% summary()
+
+df_sas %>%
+  summarize(
+    n_drug     = n_distinct(drug),
+    n_disease  = n_distinct(disease),
+    n_obs      = n(),
+    y_mean     = mean(y, na.rm = TRUE))
+```
+
+## The Model
+
+We're using `lm` to run the ANOVA, and then using `broom::glance()` and `broom::tidy()` to view the results in a table format.
+
+```{r}
+lm_model <- lm(y ~ drug:disease, df_sas)
+lm_glance <- lm_model %>% glance() 
+lm_tidy   <- lm_model %>% tidy()   
+
+lm_glance %>% kable()
+lm_tidy   %>% kable()
+```
+
+## ANOVA Tables
+
+We see here that the ANOVA table matches that of SAS, but it takes some extra work to add the `Total` row to the bottom of the table, like is shown in SAS.
+
+```{r}
+lm_table <-
+  lm_model %>%
+  anova() %>%
+  tidy() %>%
+  add_row(term = "Total", df = sum(.$df), sumsq = sum(.$sumsq))
+
+lm_table %>% kable()
+```
+
+Now, in order to match the Type I/II/III tables, we can use `rstatix::anova_test()` while specifying the `type` argument.  In R, there is no type IV ANOVA equivalent. These results match the SAS output, though the mean square values are not reported in R.
+
+### Type 1
+```{r}
+my_formula <- as.formula(y ~ drug + disease + drug*disease)
+df_sas %>% anova_test(my_formula, type = 1, detailed = TRUE) %>% get_anova_table() %>% kable()
+```
+
+
+### Type 2
+```{r}
+df_sas %>% anova_test(my_formula, type = 2, detailed = TRUE) %>% get_anova_table() %>% kable()
+```
+
+
+### Type 3
+```{r}
+df_sas %>%
+  anova_test(my_formula, type = 3, detailed = TRUE) %>% 
+  get_anova_table() %>% 
+  kable()
+```
+
+## LS Means
+
+To compare least square means, we can use the `emmeans` package with the `lsmeans` and `pwpm` functions.  These results match the SAS output perfectly.
+
+```{r}
+lm_model %>% emmeans::lsmeans("drug") %>% emmeans::pwpm()
+lm_model %>% emmeans::lsmeans("drug") %>% plot(comparisons = TRUE)
+```
+

@@ -59,7 +59,6 @@ aov1      <- aov(StemLength ~ type + block, data = plants) %>% print()
 aov1_tidy <- aov1 %>% tidy()    %>% print()
 aov1_sumr <- aov1 %>% summary() %>% print()
 aov1_glnc <- aov1 %>% glance()  %>% print()          # Matches R-Sq table in SAS
-# aov1_augm <- aov1 %>% augment() %>% print()
 
 
 
@@ -125,26 +124,26 @@ lm1 %>%
       "Knox vs O'Neill"    = contrast_6)) %>%           # Match
   tidy() %>%
   mutate(f_value = statistic^2) %>%
-  DT::datatable()
+  DT::datatable() %>%
+  DT::formatRound(c("estimate", "std.error", "statistic", "p.value", "f_value"),
+                  digits = 4)
 
 
 
 # Brian's Work ------------------------------------------------------------
-
-plants2 <- plants
-
-type_contrasts = contrasts(plants2$type)
-type_contrasts = type_contrasts[,1:2]
-type_contrasts[,1] = c(-1, -1, -1, -1, 6, -1, -1)
-type_contrasts[,2] = c(0, 0, 1, -1, 0, 0, 0)
-contrasts(plants2$type) = type_contrasts
-
-# Using lm() function
-lm2 <- lm(StemLength ~ type + block, data = plants2) %>%
-  print()
-
-tidy_lm2    <- tidy(lm2) %>% print()
-summary_lm2 <- summary(lm2) %>% print()
-augment_lm2 <- augment(lm2) %>% print()
-glance_lm2  <- glance(lm2)   %>% print()
-
+# plants2 <- plants
+#
+# type_contrasts = contrasts(plants2$type)
+# type_contrasts = type_contrasts[,1:2]
+# type_contrasts[,1] = c(-1, -1, -1, -1, 6, -1, -1)
+# type_contrasts[,2] = c(0, 0, 1, -1, 0, 0, 0)
+# contrasts(plants2$type) = type_contrasts
+#
+# # Using lm() function
+# lm2 <- lm(StemLength ~ type + block, data = plants2) %>%
+#   print()
+#
+# tidy_lm2    <- tidy(lm2) %>% print()
+# summary_lm2 <- summary(lm2) %>% print()
+# augment_lm2 <- augment(lm2) %>% print()
+# glance_lm2  <- glance(lm2)   %>% print()
