@@ -1,5 +1,5 @@
 ---
-title: "Example 50.3"
+title: "Example 50.3 - Unbalanced ANOVA for Two-Way Design with Interactions"
 output: html_document
 ---
 
