@@ -51,6 +51,9 @@ plot_list <-
               contrasts_bland_alt,
               contrasts_scatter)
 
+#' Save R image
+saveRDS(plot_list, file = file.path(path_nm, "plots", "plots.rds"))
+
 #' Save to .pdf
 for(i in names(plot_list)){
   for(j in names(plot_list[[i]])){
