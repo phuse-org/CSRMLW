@@ -17,39 +17,71 @@ filter_by_these_1 <-
   unlist(use.names = FALSE) %>%
   setNames(., .)
 
-#' LS Means Bland-Altman
-lsmeans_bland_alt <-
+#' LS Means Bland-Altman [emmean]
+lsmeans_bland_alt_emmean <-
   filter_by_these_1 %>%
   map(~plot_fn(join_lsmeans,
                .type_plot = "bland-altman",
-               list("corr"), list(.x)))
+               list("corr", "name"), list(.x, "emmean")))
 
-#' LS Means Scatter
-lsmeans_scatter <-
+#' LS Means Bland-Altman [SE]
+lsmeans_bland_alt_se <-
+  filter_by_these_1 %>%
+  map(~plot_fn(join_lsmeans,
+               .type_plot = "bland-altman",
+               list("corr", "name"), list(.x, "SE")))
+
+#' LS Means Scatter [emmean]
+lsmeans_scatter_emmean <-
   filter_by_these_1 %>%
   map(~plot_fn(join_lsmeans,
                .type_plot = "scatter",
-               list("corr"), list(.x)))
+               list("corr", "name"), list(.x, "emmean")))
 
-#' Contrast Bland-Altman
-contrasts_bland_alt <-
+#' LS Means Scatter [SE]
+lsmeans_scatter_se <-
+  filter_by_these_1 %>%
+  map(~plot_fn(join_lsmeans,
+               .type_plot = "scatter",
+               list("corr", "name"), list(.x, "SE")))
+
+#' Contrast Bland-Altman [estimate]
+contrasts_bland_alt_estimate <-
   filter_by_these_1 %>%
   map(~plot_fn(join_contrasts,
                .type_plot = "bland-altman",
-               list("corr"), list(.x)))
+               list("corr", "name"), list(.x, "estimate")))
 
-#' Contrast Scatter
-contrasts_scatter <-
+#' Contrast Bland-Altman [CI width]
+contrasts_bland_alt_ci <-
+  filter_by_these_1 %>%
+  map(~plot_fn(join_contrasts,
+               .type_plot = "bland-altman",
+               list("corr", "name"), list(.x, "ci_width")))
+
+#' Contrast Scatter [estimate]
+contrasts_scatter_estimate <-
   filter_by_these_1 %>%
   map(~plot_fn(join_contrasts,
                .type_plot = "scatter",
-               list("corr"), list(.x)))
+               list("corr", "name"), list(.x, "estimate")))
+
+#' Contrast Scatter [CI width]
+contrasts_scatter_ci <-
+  filter_by_these_1 %>%
+  map(~plot_fn(join_contrasts,
+               .type_plot = "scatter",
+               list("corr", "name"), list(.x, "ci_width")))
 
 plot_list <-
-  tibble::lst(lsmeans_bland_alt,
-              lsmeans_scatter,
-              contrasts_bland_alt,
-              contrasts_scatter)
+  tibble::lst(lsmeans_bland_alt_emmean,
+              lsmeans_bland_alt_se,
+              lsmeans_scatter_emmean,
+              lsmeans_scatter_se,
+              contrasts_bland_alt_estimate,
+              contrasts_bland_alt_ci,
+              contrasts_scatter_estimate,
+              contrasts_scatter_ci)
 
 #' Save R image
 saveRDS(plot_list, file = file.path(path_nm, "plots", "plots.rds"))
