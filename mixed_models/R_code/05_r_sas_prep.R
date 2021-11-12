@@ -43,6 +43,14 @@ r_lsmeans <-
     ~.x %>%
       select(VISIT, TRTA, PARAMCD, emmean, SE, corr, type) %>%
       pivot_longer(c(emmean, SE)) %>%
+      mutate(
+        corr =
+          case_when(corr == "corCompSymm" ~ "Heterogeneous Compound Symmetry",
+                    corr == "corCAR1" ~ "Heterogeneous First Order Autoregressive",
+                    corr == "corSymm" & type == "satterthwaite" ~ "Unstructured (satterthwaite)",
+                    corr == "Unstructured" & type == "kr" ~ "Unstructured (KR)",
+                    TRUE ~ corr)
+      ) %>%
       rename(VALUE = TRTA))
 
 r_contrasts <-
@@ -52,6 +60,14 @@ r_contrasts <-
       mutate(ci_width = abs(upper.CL - lower.CL)) %>%
       select(VISIT, contrast, PARAMCD, estimate, SE, ci_width, corr, type) %>%
       pivot_longer(c(estimate, SE, ci_width)) %>%
+      mutate(
+        corr =
+          case_when(corr == "corCompSymm" ~ "Heterogeneous Compound Symmetry",
+                    corr == "corCAR1" ~ "Heterogeneous First Order Autoregressive",
+                    corr == "corSymm" & type == "satterthwaite" ~ "Unstructured (satterthwaite)",
+                    corr == "Unstructured" & type == "kr" ~ "Unstructured (KR)",
+                    TRUE ~ corr)
+      ) %>%
       rename(VALUE = contrast))
 
 #' Read in the pre-run SAS results and row-bind them together [lsmeans]
@@ -65,8 +81,8 @@ sas_lsmeans <-
     type = str_remove(type, "_lsmeans"),
     VISIT = replace_na(VISIT, "Overall"),
     corr =
-      case_when(covariatestructure == "Heterogeneous Compound Symmetry" ~ "corCompSymm",
-                covariatestructure == "Heterogeneous First Order Autoregressive" ~ "corCAR1",
+      case_when(covariatestructure == "Unstructured" & type == "satterthwaite" ~ "Unstructured (satterthwaite)",
+                covariatestructure == "Unstructured" & type == "kr" ~ "Unstructured (KR)",
                 TRUE ~ covariatestructure)
   ) %>%
   select(type, VISIT, VALUE, PARAMCD, PARAM, emmean, SE, corr) %>%
@@ -82,8 +98,8 @@ sas_contrasts <-
     ci_width = abs(upperci95 - lowerci95),
     VISIT = replace_na(VISIT, "Overall"),
     corr =
-      case_when(covariatestructure == "Heterogeneous Compound Symmetry" ~ "corCompSymm",
-                covariatestructure == "Heterogeneous First Order Autoregressive" ~ "corCAR1",
+      case_when(covariatestructure == "Unstructured" & type == "satterthwaite" ~ "Unstructured (satterthwaite)",
+                covariatestructure == "Unstructured" & type == "kr" ~ "Unstructured (KR)",
                 TRUE ~ covariatestructure)
   ) %>%
   rename(estimate = lsmeans_difference) %>%
@@ -108,4 +124,3 @@ join_contrasts <-
   drop_na(corr)
 
 # END
-
