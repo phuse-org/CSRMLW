@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Clara Beck, Matthew Kumar &amp; Aiming Yang" />
+<meta name="author" content="Clara Beck, Matthew Kumar" />
 
 <meta name="date" content="2021-10-18" />
 
@@ -3242,29 +3242,50 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">CMH Test</h1>
-<h4 class="author">Clara Beck, Matthew Kumar &amp; Aiming Yang</h4>
+<h4 class="author">Clara Beck, Matthew Kumar</h4>
 <h4 class="date">October 18, 2021</h4>
 
 </div>
 
 
-<div id="cochran-mantel-haenszel-test---background" class="section level1">
-<h1><span class="header-section-number">1</span> Cochran-Mantel-Haenszel Test - Background</h1>
-<p>The CMH procedure tests for conditional independence in partial contingency tables for a 2 x 2 x K design. However, it can be generalized to I x J x K tables (Agresti).</p>
-<p>Depending on the <code>scale</code> of the variables, different test statistics are computed, the number of degrees of freedom differs:</p>
+<div id="cochran-mantel-haenszel-test" class="section level1">
+<h1><span class="header-section-number">1</span> Cochran-Mantel-Haenszel Test</h1>
+<p>The CMH procedure tests for conditional independence in partial contingency tables for a 2 x 2 x K design. However, it can be generalized to tables of X x Y x K dimensions.</p>
+<p><img src="data:image/png;base64,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" width="162" style="display: block; margin: auto;" /></p>
+<div id="naming-convention" class="section level2">
+<h2><span class="header-section-number">1.1</span> Naming Convention</h2>
+<p>For the remainder of this document, we adopt the following naming convention when referring to variables of a contingency table:</p>
 <ul>
-<li><code>general association</code> statistic (X and Y are treated as nominal) results in <code>(X-1) * (Y-1) dfs</code></li>
-<li><code>row mean</code> scores statistic (X is nominal and Y is ordinal) results in <code>X-1 dfs</code></li>
-<li><code>nonzero correlation</code> statistic (X and Y ordinal) results in <code>1 df</code></li>
+<li><p>X = exposure</p></li>
+<li><p>Y = response</p></li>
+<li><p>K = control</p></li>
 </ul>
-<p>To be consistent between SAS and R, the following naming conventions are used when referring to variables below:</p>
-<p>X = exposure</p>
-<p>Y = response</p>
-<p>K = control</p>
 </div>
-<div id="testing-schemata" class="section level1">
-<h1><span class="header-section-number">2</span> Testing Schemata</h1>
-<p>In order to follow a systematic approach and to cover the 2x2xK as well as the generalized CMH test multiple data schemata were tested. Also, some edge cases with sparse data were used. From the original 10 schemata, we selected four which demonstrate the main issues:</p>
+<div id="scale" class="section level2">
+<h2><span class="header-section-number">1.2</span> Scale</h2>
+<p>The <code>scale</code> of the exposure (X) and response (Y) variables dictate which test statistic is computed for the contingency table. Each test statistic is evaluated on different degrees of freedom (df):</p>
+<ul>
+<li><p><code>General association</code> statistic (X and Y both nominal) results in <code>(X-1) * (Y-1) dfs</code></p></li>
+<li><p><code>Row mean</code> scores statistic (X is nominal and Y is ordinal) results in <code>X-1 dfs</code></p></li>
+<li><p><code>Nonzero correlation</code> statistic (X and Y both ordinal) results in <code>1 df</code></p></li>
+</ul>
+</div>
+</div>
+<div id="testing-strategy" class="section level1">
+<h1><span class="header-section-number">2</span> Testing Strategy</h1>
+<div id="data" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data</h2>
+<p>To begin investigating the differences in the SAS and R implementations of the CMH test, we decided to use the CDISC Pilot data set, which is publicly available on the PHUSE Test Data Factory repository. We applied very basic filtering conditions upfront (see below) and this data set served as the basis of the examples to follow.</p>
+<pre class="r"><code># Download CDISC Pilot Dataset
+# Perform filtering
+library(haven)
+read_xpt(&quot;https://github.com/phuse-org/TestDataFactory/raw/main/Updated/TDF_ADaM/adcibc.xpt&quot;) %&gt;% 
+  filter(EFFFL == &#39;Y&#39; &amp; ITTFL == &#39;Y&#39;, AVISITN == 8 &amp; ANL01FL==&#39;Y&#39;) </code></pre>
+</div>
+<div id="schemes" class="section level2">
+<h2><span class="header-section-number">2.2</span> Schemes</h2>
+<p>In order to follow a systematic approach to testing, and to cover variations in the CMH test, we considered the traditional 2 x 2 x K design as well as scenarios where the generalized CMH test is employed (e.g. 5 x 3 x 3).</p>
+<p>We present 5 archetype test scenarios that illustrate diverging results, possibly related to sparse data and possibly considered edge cases.</p>
 <table>
 <colgroup>
 <col width="20%"></col>
@@ -3321,47 +3342,42 @@ div.tocify {
 </tbody>
 </table>
 </div>
+</div>
 <div id="implementation" class="section level1">
 <h1><span class="header-section-number">3</span> Implementation</h1>
-<div id="data" class="section level2">
-<h2><span class="header-section-number">3.1</span> Data</h2>
-<p>For the further documentation the CDSIC data were used and pre-processed:</p>
-<pre class="r"><code>### pre-filtering data 
-library(haven)
-read_xpt(&quot;https://github.com/phuse-org/TestDataFactory/raw/main/Updated/TDF_ADaM/adcibc.xpt&quot;) %&gt;% 
-  filter(EFFFL == &#39;Y&#39; &amp; ITTFL == &#39;Y&#39;, AVISITN == 8 &amp; ANL01FL==&#39;Y&#39;) </code></pre>
-</div>
-<div id="in-sas" class="section level2">
-<h2><span class="header-section-number">3.2</span> In SAS</h2>
-<p>The cmh test is calculated in SAS using the PROC FREQ procedure. By default, it outputs the chi square statistic, degrees of freedom and p-value for each of the three alternative hypothesis: <code>general association</code>, <code>row means differ</code>, and <code>nonzero correlation</code>.</p>
-<p>When the design of the contingency table is 2x2xK (i.e, X == 2 levels, Y == 2 levels, K &gt;= 2 levels), the Mantel-Haenszel Common Odds Ratio (odds ratio estimate, 95% CI, P-value) and the Breslow-Day Test for Homogeneity of the Odds Ratios (chi-square statistic, degrees of freedom, P-value) are also output.</p>
+<div id="cmh-in-sas" class="section level2">
+<h2><span class="header-section-number">3.1</span> CMH in SAS</h2>
+<p>The cmh test is calculated in SAS using the PROC FREQ procedure. By default, it outputs the chi square statistic, degrees of freedom and p-value for each of the three alternative hypothesis: <code>general association</code>, <code>row means differ</code>, and <code>nonzero correlation</code>. It is up to the statistical analyst or statistician to know which result is appropriate for their analysis.</p>
+<p>When the design of the contingency table is 2 x 2 x K (i.e, X == 2 levels, Y == 2 levels, K &gt;= 2 levels), the Mantel-Haenszel Common Odds Ratio (odds ratio estimate, 95% CI, P-value) and the Breslow-Day Test for Homogeneity of the Odds Ratios (chi-square statistic, degrees of freedom, P-value) are also output.</p>
+<p>Below is the syntax to conduct a CMH analysis in SAS:</p>
 <pre class="r"><code>Proc freq data = filtered_data; 
 tables K * X * Y / cmh; 
+* the order of K, X, and Y appearing on the line is important!;
 run; </code></pre>
 </div>
 <div id="in-r" class="section level2">
-<h2><span class="header-section-number">3.3</span> In R</h2>
+<h2><span class="header-section-number">3.2</span> In R</h2>
 <p>We did not find any R package that delivers all the same measures as SAS at once. Therefore, we tried out multiple packages:</p>
-<div id="htmlwidget-61423a54cccb6b303796" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-61423a54cccb6b303796">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Package":["stats::mantelhaen.test()","vcdExtra::CMHtest()","epiDisplay::mhor()"],"General Association":["✅","✅","❌"],"Row Means Differ":["❌","✅","❌"],"Nonzero Correlation":["❌","✅","❌"],"M-H Odds Ratio":["✅","❌","✅"],"Homogeneity Test":["❌","❌","✅"],"Note":["Works well for 2x2xK","Problems with sparsity, potential bug","OR are limited to 2x2xK design"]},"columns":[{"accessor":"Package","name":"Package","type":"character","html":true,"align":"center","width":170},{"accessor":"General Association","name":"General Association","type":"character","html":true,"align":"center"},{"accessor":"Row Means Differ","name":"Row Means Differ","type":"character","html":true,"align":"center"},{"accessor":"Nonzero Correlation","name":"Nonzero Correlation","type":"character","html":true,"align":"center"},{"accessor":"M-H Odds Ratio","name":"M-H Odds Ratio","type":"character","html":true,"align":"center"},{"accessor":"Homogeneity Test","name":"Homogeneity Test","type":"character","html":true,"align":"center"},{"accessor":"Note","name":"Note","type":"character","html":true,"align":"center","width":120}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"64216caa36a6dd9c60e1a8145c8c02d2"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7afec428c9b923e3ccd1" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7afec428c9b923e3ccd1">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Package":["stats::mantelhaen.test()","vcdExtra::CMHtest()","epiDisplay::mhor()"],"General Association":["✅","✅","❌"],"Row Means Differ":["❌","✅","❌"],"Nonzero Correlation":["❌","✅","❌"],"M-H Odds Ratio":["✅","❌","✅"],"Homogeneity Test":["❌","❌","✅"],"Note":["Works well for 2x2xK","Problems with sparsity, potential bug","OR are limited to 2x2xK design"]},"columns":[{"accessor":"Package","name":"Package","type":"character","html":true,"align":"center","width":170},{"accessor":"General Association","name":"General Association","type":"character","html":true,"align":"center"},{"accessor":"Row Means Differ","name":"Row Means Differ","type":"character","html":true,"align":"center"},{"accessor":"Nonzero Correlation","name":"Nonzero Correlation","type":"character","html":true,"align":"center"},{"accessor":"M-H Odds Ratio","name":"M-H Odds Ratio","type":"character","html":true,"align":"center"},{"accessor":"Homogeneity Test","name":"Homogeneity Test","type":"character","html":true,"align":"center"},{"accessor":"Note","name":"Note","type":"character","html":true,"align":"center","width":120}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"64216caa36a6dd9c60e1a8145c8c02d2"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 <div id="mantelhaen.test" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> mantelhaen.test()</h3>
+<h3><span class="header-section-number">3.2.1</span> mantelhaen.test()</h3>
 <p>This is included in a base installation of R, as part of the stats package. Requires inputting data as a <em>table</em> or as <em>vectors</em>.</p>
 <pre class="r"><code>mantelhaen.test(x = data$x, y = data$y, z = data$k)</code></pre>
 </div>
 <div id="cmhtest" class="section level3">
-<h3><span class="header-section-number">3.3.2</span> CMHtest()</h3>
+<h3><span class="header-section-number">3.2.2</span> CMHtest()</h3>
 <p>The vcdExtra package provides results for the generalized CMH test, for each of the three model it outputs the Chi-square value and the respective p-values. Flexible data input methods available: <em>table</em> or <em>formula</em> (aggregated level data in a data frame).</p>
 <pre class="r"><code>library(vcdExtra)
-CMHtest(Freq~X+Y|K,data=data, overall=TRUE) </code></pre>
+CMHtest(Freq ~ X + Y | K , data=data, overall=TRUE) </code></pre>
 <div id="forked-version---solution-for-sparse-data" class="section level4">
-<h4><span class="header-section-number">3.3.2.1</span> Forked Version - Solution for sparse data</h4>
+<h4><span class="header-section-number">3.2.2.1</span> Forked Version - Solution for sparse data</h4>
 <p>To tackle the <a href="https://github.com/friendly/vcdExtra/issues/3">issue with sparse data</a> it is recommended that a use of <code>solve()</code> is replaced with <code>MASS::ginv</code>. This was implemented in the forked version of vcdExtra which can be installed from here:</p>
 <pre class="r"><code>devtools::install_github(&quot;mstackhouse/vcdExtra&quot;)</code></pre>
 <p>However, also the forked version for the vcdExtra package works only until a certain level of sparsity. In case of our data, it still works if the data are stratified by the pooled Site ID (SITEGR1 - 11 unique values) whereas using the unpooled Site ID (SITEID - 17 unique values) also throws an error.</p>
 </div>
-<div id="bug" class="section level4">
-<h4><span class="header-section-number">3.3.2.2</span> Bug</h4>
+<div id="inconsistent-results" class="section level4">
+<h4><span class="header-section-number">3.2.2.2</span> Inconsistent Results</h4>
 <p>Exploring the vcdExtra package in detail we realized that there seems to be a bug in the implementation which we would like to highlight here.</p>
 <p>Using an independent data example (3x2x2), we first ran the CMH test through SAS and obtained the following:</p>
 <pre class="r"><code># Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
@@ -3385,7 +3401,7 @@ CMHtest(Freq~X+Y|K,data=data, overall=TRUE) </code></pre>
 ## rmeans  26.02779 2  2.229135e-06
 ## cmeans  6.458575 1  0.01104181  
 ## cor     6.458575 2  0.03958569</code></pre>
-<p>While we’ve essentially asked for everything (i.e. the default), albiet explicitly, the results do not match. The degrees of freedom seem to be mismatched with results in wrong p-values (if we assume SAS is the gold standard)</p>
+<p>While we’ve essentially asked for everything (i.e. the default), albeit explicitly, the results do not match. The degrees of freedom seem to be mismatched with results in wrong p-values (if we assume SAS is the gold standard)</p>
 <p>Similarly, if we specify we would <em>only</em> like certain tests returned, the results seem dependent on the order of specification:</p>
 <pre class="r"><code># Order: cor, general, rmeans
 CMHtest(Freq~x+y|k, data=test_eg, overall=TRUE, details=TRUE, types=c(&quot;cor&quot;,&quot;general&quot;,&quot;rmeans&quot;))$ALL$table</code></pre>
@@ -3400,12 +3416,12 @@ CMHtest(Freq~x+y|k, data=test_eg, overall=TRUE, details=TRUE, types=c(&quot;rmea
 ## general 26.02779 2  2.229135e-06
 ## cor     6.458575 2  0.03958569</code></pre>
 <p>Impact: In the event of a 2x2xK design, all 3 test statistics, degrees of freedom and p-values are the same. Therefore, specifying a 2x2xK analysis any of the ways above results in correct “answer”, though they are technically mixed up.</p>
-<p>This is why we chose as a 3x2x2, so we can clearly where things are mixed up.</p>
+<p>This is why we chose as a 3x2x2, so we can clearly <em>where</em> things are mixed up.</p>
 <p>We are planning to submit an issue to the vcdExtra github for the author’s review.</p>
 </div>
 </div>
 <div id="epi-display-package" class="section level3">
-<h3><span class="header-section-number">3.3.3</span> Epi Display package</h3>
+<h3><span class="header-section-number">3.2.3</span> Epi Display package</h3>
 <p>To get the M-H common odds ratio and the homogeneity test, the epiDisplay package can be used.</p>
 <pre class="r"><code>library(epiDisplay) 
 mhor(x,y,k, graph = FALSE)</code></pre>
@@ -3421,7 +3437,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ylsxzmcugc .gt_table {
+#kvfeneryzb .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3446,7 +3462,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_heading {
+#kvfeneryzb .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -3458,7 +3474,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_title {
+#kvfeneryzb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3468,7 +3484,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-bottom-width: 0;
 }
 
-#ylsxzmcugc .gt_subtitle {
+#kvfeneryzb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3478,13 +3494,13 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-top-width: 0;
 }
 
-#ylsxzmcugc .gt_bottom_border {
+#kvfeneryzb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_col_headings {
+#kvfeneryzb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3499,7 +3515,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_col_heading {
+#kvfeneryzb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3519,7 +3535,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   overflow-x: hidden;
 }
 
-#ylsxzmcugc .gt_column_spanner_outer {
+#kvfeneryzb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3531,15 +3547,15 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-right: 4px;
 }
 
-#ylsxzmcugc .gt_column_spanner_outer:first-child {
+#kvfeneryzb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ylsxzmcugc .gt_column_spanner_outer:last-child {
+#kvfeneryzb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ylsxzmcugc .gt_column_spanner {
+#kvfeneryzb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3551,7 +3567,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   width: 100%;
 }
 
-#ylsxzmcugc .gt_group_heading {
+#kvfeneryzb .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3573,7 +3589,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   vertical-align: middle;
 }
 
-#ylsxzmcugc .gt_empty_group_heading {
+#kvfeneryzb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3588,15 +3604,15 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   vertical-align: middle;
 }
 
-#ylsxzmcugc .gt_from_md > :first-child {
+#kvfeneryzb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ylsxzmcugc .gt_from_md > :last-child {
+#kvfeneryzb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ylsxzmcugc .gt_row {
+#kvfeneryzb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3615,7 +3631,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   overflow-x: hidden;
 }
 
-#ylsxzmcugc .gt_stub {
+#kvfeneryzb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3627,7 +3643,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-left: 12px;
 }
 
-#ylsxzmcugc .gt_summary_row {
+#kvfeneryzb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3637,7 +3653,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-right: 5px;
 }
 
-#ylsxzmcugc .gt_first_summary_row {
+#kvfeneryzb .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3647,7 +3663,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_grand_summary_row {
+#kvfeneryzb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3657,7 +3673,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-right: 5px;
 }
 
-#ylsxzmcugc .gt_first_grand_summary_row {
+#kvfeneryzb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3667,11 +3683,11 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_striped {
+#kvfeneryzb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ylsxzmcugc .gt_table_body {
+#kvfeneryzb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3680,7 +3696,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_footnotes {
+#kvfeneryzb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3694,13 +3710,13 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_footnote {
+#kvfeneryzb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ylsxzmcugc .gt_sourcenotes {
+#kvfeneryzb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3714,46 +3730,46 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ylsxzmcugc .gt_sourcenote {
+#kvfeneryzb .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ylsxzmcugc .gt_left {
+#kvfeneryzb .gt_left {
   text-align: left;
 }
 
-#ylsxzmcugc .gt_center {
+#kvfeneryzb .gt_center {
   text-align: center;
 }
 
-#ylsxzmcugc .gt_right {
+#kvfeneryzb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ylsxzmcugc .gt_font_normal {
+#kvfeneryzb .gt_font_normal {
   font-weight: normal;
 }
 
-#ylsxzmcugc .gt_font_bold {
+#kvfeneryzb .gt_font_bold {
   font-weight: bold;
 }
 
-#ylsxzmcugc .gt_font_italic {
+#kvfeneryzb .gt_font_italic {
   font-style: italic;
 }
 
-#ylsxzmcugc .gt_super {
+#kvfeneryzb .gt_super {
   font-size: 65%;
 }
 
-#ylsxzmcugc .gt_footnote_marks {
+#kvfeneryzb .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ylsxzmcugc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
+<div id="kvfeneryzb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
   <colgroup>
     <col style="width:75px;"></col>
     <col style="width:180px;"></col>
@@ -3895,7 +3911,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#sqkhfhcdog .gt_table {
+#jwvrgtmhbk .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3920,7 +3936,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_heading {
+#jwvrgtmhbk .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -3932,7 +3948,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_title {
+#jwvrgtmhbk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3942,7 +3958,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-bottom-width: 0;
 }
 
-#sqkhfhcdog .gt_subtitle {
+#jwvrgtmhbk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3952,13 +3968,13 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-top-width: 0;
 }
 
-#sqkhfhcdog .gt_bottom_border {
+#jwvrgtmhbk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_col_headings {
+#jwvrgtmhbk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3973,7 +3989,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_col_heading {
+#jwvrgtmhbk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3993,7 +4009,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   overflow-x: hidden;
 }
 
-#sqkhfhcdog .gt_column_spanner_outer {
+#jwvrgtmhbk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4005,15 +4021,15 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-right: 4px;
 }
 
-#sqkhfhcdog .gt_column_spanner_outer:first-child {
+#jwvrgtmhbk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sqkhfhcdog .gt_column_spanner_outer:last-child {
+#jwvrgtmhbk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sqkhfhcdog .gt_column_spanner {
+#jwvrgtmhbk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4025,7 +4041,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   width: 100%;
 }
 
-#sqkhfhcdog .gt_group_heading {
+#jwvrgtmhbk .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4047,7 +4063,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   vertical-align: middle;
 }
 
-#sqkhfhcdog .gt_empty_group_heading {
+#jwvrgtmhbk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4062,15 +4078,15 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   vertical-align: middle;
 }
 
-#sqkhfhcdog .gt_from_md > :first-child {
+#jwvrgtmhbk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sqkhfhcdog .gt_from_md > :last-child {
+#jwvrgtmhbk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sqkhfhcdog .gt_row {
+#jwvrgtmhbk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4089,7 +4105,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   overflow-x: hidden;
 }
 
-#sqkhfhcdog .gt_stub {
+#jwvrgtmhbk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4101,7 +4117,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-left: 12px;
 }
 
-#sqkhfhcdog .gt_summary_row {
+#jwvrgtmhbk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4111,7 +4127,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-right: 5px;
 }
 
-#sqkhfhcdog .gt_first_summary_row {
+#jwvrgtmhbk .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4121,7 +4137,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_grand_summary_row {
+#jwvrgtmhbk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4131,7 +4147,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   padding-right: 5px;
 }
 
-#sqkhfhcdog .gt_first_grand_summary_row {
+#jwvrgtmhbk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4141,11 +4157,11 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_striped {
+#jwvrgtmhbk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sqkhfhcdog .gt_table_body {
+#jwvrgtmhbk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4154,7 +4170,7 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_footnotes {
+#jwvrgtmhbk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4168,13 +4184,13 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_footnote {
+#jwvrgtmhbk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#sqkhfhcdog .gt_sourcenotes {
+#jwvrgtmhbk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4188,46 +4204,46 @@ mhor(x,y,k, graph = FALSE)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#sqkhfhcdog .gt_sourcenote {
+#jwvrgtmhbk .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#sqkhfhcdog .gt_left {
+#jwvrgtmhbk .gt_left {
   text-align: left;
 }
 
-#sqkhfhcdog .gt_center {
+#jwvrgtmhbk .gt_center {
   text-align: center;
 }
 
-#sqkhfhcdog .gt_right {
+#jwvrgtmhbk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sqkhfhcdog .gt_font_normal {
+#jwvrgtmhbk .gt_font_normal {
   font-weight: normal;
 }
 
-#sqkhfhcdog .gt_font_bold {
+#jwvrgtmhbk .gt_font_bold {
   font-weight: bold;
 }
 
-#sqkhfhcdog .gt_font_italic {
+#jwvrgtmhbk .gt_font_italic {
   font-style: italic;
 }
 
-#sqkhfhcdog .gt_super {
+#jwvrgtmhbk .gt_super {
   font-size: 65%;
 }
 
-#sqkhfhcdog .gt_footnote_marks {
+#jwvrgtmhbk .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="sqkhfhcdog" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
+<div id="jwvrgtmhbk" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
   <colgroup>
     <col style="width:75px;"></col>
     <col style="width:180px;"></col>
@@ -4345,7 +4361,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xjwahydcjq .gt_table {
+#bpgkmkdxbt .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -4370,7 +4386,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-left-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_heading {
+#bpgkmkdxbt .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -4382,7 +4398,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_title {
+#bpgkmkdxbt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4392,7 +4408,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-bottom-width: 0;
 }
 
-#xjwahydcjq .gt_subtitle {
+#bpgkmkdxbt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4402,13 +4418,13 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-top-width: 0;
 }
 
-#xjwahydcjq .gt_bottom_border {
+#bpgkmkdxbt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_col_headings {
+#bpgkmkdxbt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4423,7 +4439,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_col_heading {
+#bpgkmkdxbt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4443,7 +4459,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   overflow-x: hidden;
 }
 
-#xjwahydcjq .gt_column_spanner_outer {
+#bpgkmkdxbt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4455,15 +4471,15 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-right: 4px;
 }
 
-#xjwahydcjq .gt_column_spanner_outer:first-child {
+#bpgkmkdxbt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xjwahydcjq .gt_column_spanner_outer:last-child {
+#bpgkmkdxbt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xjwahydcjq .gt_column_spanner {
+#bpgkmkdxbt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4475,7 +4491,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   width: 100%;
 }
 
-#xjwahydcjq .gt_group_heading {
+#bpgkmkdxbt .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4497,7 +4513,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   vertical-align: middle;
 }
 
-#xjwahydcjq .gt_empty_group_heading {
+#bpgkmkdxbt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4512,15 +4528,15 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   vertical-align: middle;
 }
 
-#xjwahydcjq .gt_from_md > :first-child {
+#bpgkmkdxbt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xjwahydcjq .gt_from_md > :last-child {
+#bpgkmkdxbt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xjwahydcjq .gt_row {
+#bpgkmkdxbt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4539,7 +4555,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   overflow-x: hidden;
 }
 
-#xjwahydcjq .gt_stub {
+#bpgkmkdxbt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4551,7 +4567,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-left: 12px;
 }
 
-#xjwahydcjq .gt_summary_row {
+#bpgkmkdxbt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4561,7 +4577,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-right: 5px;
 }
 
-#xjwahydcjq .gt_first_summary_row {
+#bpgkmkdxbt .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4571,7 +4587,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-top-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_grand_summary_row {
+#bpgkmkdxbt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4581,7 +4597,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-right: 5px;
 }
 
-#xjwahydcjq .gt_first_grand_summary_row {
+#bpgkmkdxbt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4591,11 +4607,11 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-top-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_striped {
+#bpgkmkdxbt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xjwahydcjq .gt_table_body {
+#bpgkmkdxbt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4604,7 +4620,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-bottom-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_footnotes {
+#bpgkmkdxbt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4618,13 +4634,13 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_footnote {
+#bpgkmkdxbt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#xjwahydcjq .gt_sourcenotes {
+#bpgkmkdxbt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4638,46 +4654,46 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#xjwahydcjq .gt_sourcenote {
+#bpgkmkdxbt .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#xjwahydcjq .gt_left {
+#bpgkmkdxbt .gt_left {
   text-align: left;
 }
 
-#xjwahydcjq .gt_center {
+#bpgkmkdxbt .gt_center {
   text-align: center;
 }
 
-#xjwahydcjq .gt_right {
+#bpgkmkdxbt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xjwahydcjq .gt_font_normal {
+#bpgkmkdxbt .gt_font_normal {
   font-weight: normal;
 }
 
-#xjwahydcjq .gt_font_bold {
+#bpgkmkdxbt .gt_font_bold {
   font-weight: bold;
 }
 
-#xjwahydcjq .gt_font_italic {
+#bpgkmkdxbt .gt_font_italic {
   font-style: italic;
 }
 
-#xjwahydcjq .gt_super {
+#bpgkmkdxbt .gt_super {
   font-size: 65%;
 }
 
-#xjwahydcjq .gt_footnote_marks {
+#bpgkmkdxbt .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="xjwahydcjq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
+<div id="bpgkmkdxbt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
   <colgroup>
     <col style="width:75px;"></col>
     <col style="width:130px;"></col>
@@ -4748,7 +4764,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#vakdkztbhl .gt_table {
+#fdypzamxrp .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -4773,7 +4789,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-left-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_heading {
+#fdypzamxrp .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -4785,7 +4801,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_title {
+#fdypzamxrp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4795,7 +4811,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-bottom-width: 0;
 }
 
-#vakdkztbhl .gt_subtitle {
+#fdypzamxrp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4805,13 +4821,13 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-top-width: 0;
 }
 
-#vakdkztbhl .gt_bottom_border {
+#fdypzamxrp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_col_headings {
+#fdypzamxrp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4826,7 +4842,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_col_heading {
+#fdypzamxrp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4846,7 +4862,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   overflow-x: hidden;
 }
 
-#vakdkztbhl .gt_column_spanner_outer {
+#fdypzamxrp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4858,15 +4874,15 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-right: 4px;
 }
 
-#vakdkztbhl .gt_column_spanner_outer:first-child {
+#fdypzamxrp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vakdkztbhl .gt_column_spanner_outer:last-child {
+#fdypzamxrp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vakdkztbhl .gt_column_spanner {
+#fdypzamxrp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4878,7 +4894,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   width: 100%;
 }
 
-#vakdkztbhl .gt_group_heading {
+#fdypzamxrp .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4900,7 +4916,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   vertical-align: middle;
 }
 
-#vakdkztbhl .gt_empty_group_heading {
+#fdypzamxrp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4915,15 +4931,15 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   vertical-align: middle;
 }
 
-#vakdkztbhl .gt_from_md > :first-child {
+#fdypzamxrp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vakdkztbhl .gt_from_md > :last-child {
+#fdypzamxrp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vakdkztbhl .gt_row {
+#fdypzamxrp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4942,7 +4958,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   overflow-x: hidden;
 }
 
-#vakdkztbhl .gt_stub {
+#fdypzamxrp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4954,7 +4970,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-left: 12px;
 }
 
-#vakdkztbhl .gt_summary_row {
+#fdypzamxrp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4964,7 +4980,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-right: 5px;
 }
 
-#vakdkztbhl .gt_first_summary_row {
+#fdypzamxrp .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4974,7 +4990,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-top-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_grand_summary_row {
+#fdypzamxrp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4984,7 +5000,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   padding-right: 5px;
 }
 
-#vakdkztbhl .gt_first_grand_summary_row {
+#fdypzamxrp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4994,11 +5010,11 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-top-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_striped {
+#fdypzamxrp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vakdkztbhl .gt_table_body {
+#fdypzamxrp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5007,7 +5023,7 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-bottom-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_footnotes {
+#fdypzamxrp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5021,13 +5037,13 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_footnote {
+#fdypzamxrp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#vakdkztbhl .gt_sourcenotes {
+#fdypzamxrp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5041,46 +5057,46 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
   border-right-color: #D3D3D3;
 }
 
-#vakdkztbhl .gt_sourcenote {
+#fdypzamxrp .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#vakdkztbhl .gt_left {
+#fdypzamxrp .gt_left {
   text-align: left;
 }
 
-#vakdkztbhl .gt_center {
+#fdypzamxrp .gt_center {
   text-align: center;
 }
 
-#vakdkztbhl .gt_right {
+#fdypzamxrp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vakdkztbhl .gt_font_normal {
+#fdypzamxrp .gt_font_normal {
   font-weight: normal;
 }
 
-#vakdkztbhl .gt_font_bold {
+#fdypzamxrp .gt_font_bold {
   font-weight: bold;
 }
 
-#vakdkztbhl .gt_font_italic {
+#fdypzamxrp .gt_font_italic {
   font-style: italic;
 }
 
-#vakdkztbhl .gt_super {
+#fdypzamxrp .gt_super {
   font-size: 65%;
 }
 
-#vakdkztbhl .gt_footnote_marks {
+#fdypzamxrp .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="vakdkztbhl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
+<div id="fdypzamxrp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;; width: 0px">
   <colgroup>
     <col style="width:75px;"></col>
     <col style="width:150px;"></col>
@@ -5138,8 +5154,8 @@ For large sparse table (many strata) CMHTest will occasionally throw an error in
 </div>
 <div id="summary-and-recommendation" class="section level1">
 <h1><span class="header-section-number">5</span> Summary and Recommendation</h1>
-<p>Having explored the available R packages to calculate the CMH statistics, using R can only be recommended if the analysis design is equivalent to 2x2xK. Then, the base mantelhaen.test() function as well as the vcdExtra package show reliable results which are equal to the output of the SAS function. The same is true fot the common odds ratio even though there is a difference in decimals.<br />
-For the generalized version of the cmh test no R package can be recommended so far. SAS and R outputs differ substantially (because of the underlying functions used?) and the vcdExtra package seems to be bugged.</p>
+<p>Having explored the available R packages to calculate the CMH statistics, using R can only be recommended if the analysis design is equivalent to 2 x 2 x K. Then, the base mantelhaen.test() function as well as the vcdExtra package show reliable results which are equal to the output of the SAS function. The same is true for the common odds ratio even though there is a marked difference in decimals.</p>
+<p>For the generalized version of the cmh test no R package can be recommended so far. SAS and R outputs differ substantially (possibly due to the underlying subroutines or functions) and the vcdExtra package seems to deliver inconsistent results outside the 2 x 2 x K design.</p>
 </div>
 <div id="references" class="section level1">
 <h1><span class="header-section-number">6</span> References</h1>
