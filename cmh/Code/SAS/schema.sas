@@ -1,5 +1,3 @@
-libname cd '/var/swan/root/bhc/general/playground/cdisc_pilot/dev/data/adam/';
-
 * create base data;
 data base;
     set cd.adcibc (rename=(aval=temp_aval));
@@ -159,7 +157,6 @@ proc transpose data = part2 out = result_part2 (drop = _name_);
      var col1;
 run;
 
-libname out '/home/ggdzn';
 data out.result_part1;
     set result_part1;
 run;
