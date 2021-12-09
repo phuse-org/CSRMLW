@@ -125,10 +125,10 @@ cmeans  6.458575 1  0.01104181
 cor     6.458575 2  0.03958569
 ```
 
-In this example, we see the the **test statistics match** with the previous R results, however the **degrees of freedom are mismatched**, leading to incorrect p-values.
+In this example, we see the **test statistics match** with the previous R results, however the **degrees of freedom are mismatched**, leading to incorrect p-values.
 
 ## Test 2 - types = "rmeans"
-In this test case, we that the `row means` test statistic is of interest and specify it directly.
+In this test case, we see that the `row means` test statistic is of interest and specify it directly.
 
 ```{r, eval = F}
 CMHtest(Freq~x+y|k, data=r_cmh, overall=TRUE, details=TRUE, types = "rmeans")$ALL$table

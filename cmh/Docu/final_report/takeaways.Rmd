@@ -14,7 +14,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-1. To get the same output (incl. Chi-sqaure statistics, odds ratio and homogeneity test) more than one package is needed in R.
+1. To get the same output (incl. Chi-square statistics, odds ratio and homogeneity test) more than one package is needed in R.
 
 2. The most methodologically mature package is the VCD extra package, however it comes with some bugs and has its problems with sparse data. For a simple 2x2xk design multiple other packages can be used and provide reliable results. 
 
