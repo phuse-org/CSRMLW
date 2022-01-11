@@ -91,15 +91,21 @@ We did not find any R package that delivers all the same measures as SAS at once
 ```{r, echo = FALSE, warning=FALSE, message=FALSE}
 library(magrittr)
 library(reactable)
+
+# table approach inspired by Sharla - https://sharla.party/post/comparing-two-dfs/
 yes <- "\U2705"
 no <- "\U274C"
+
 tibble::tribble(
   ~Package, ~`General Association`, ~`Row Means Differ`, ~`Nonzero Correlation`, ~`M-H Odds Ratio`, ~`Homogeneity Test`, ~Note,
  "stats::mantelhaen.test()", yes, no, no, yes, no, "Works well for 2x2xK",
  "vcdExtra::CMHtest()", yes,yes,yes,no,no,"Problems with sparsity, potential bug",
- "epiDisplay::mhor()", no,no,no,yes,yes,"OR are limited to 2x2xK design"
-) %>%
-  reactable::reactable(fullWidth = TRUE,defaultColDef = colDef(html = TRUE, align = "center"), columns = list(Note = colDef(width = 120), Package = colDef(width = 170)))
+ "epiDisplay::mhor()", no,no,no,yes,yes,"OR are limited to 2x2xK design") %>%
+  reactable::reactable(fullWidth = TRUE,
+                       defaultColDef = colDef(html = TRUE, align = "center"), 
+                       columns = list(Note = colDef(width = 120), 
+                                      Package = colDef(width = 170))
+                       )
 ```
 
 ### mantelhaen.test()

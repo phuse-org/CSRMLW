@@ -1,5 +1,5 @@
 ---
-title: "vcdExtra Bug"
+title: "vcdExtra Issue"
 author: "CMH Subgroup"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: 
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Overview
 
-The purpose of this document is to illustrate inconsistent results by the `vcdExtra 0.7-5` package when doing a CMH analysis under certain scenarios. We will use a mock dataset to compare the results obtained from SAS's Proc FREQ and R's vcdExtra package.
+The purpose of this document is to illustrate inconsistent results by the `vcdExtra 0.7-5` package when doing a CMH analysis under certain scenarios. We will use a mock data set to compare the results obtained from SAS's Proc FREQ and R's vcdExtra package.
 
 
 # SAS 
@@ -108,7 +108,7 @@ general 26.02779 2  2.229135e-06
 At this point we can see that SAS and R generally agree on the output of the 3 test statistics, df and p-values for this example.  
 
 # Potential Bug
-For the R-based CMH analysis, we did not specify the `types` argument. In the previous example, all 3 test statistics (and a fourth) are computed automatically. We observed inconsistent results when explicitly specifying this parameter which might point to a potential bug in the package.
+For the R-based CMH analysis, we did not specify the `types` argument. In the previous example, all 3 test statistics (and a fourth) are computed automatically. We observed inconsistent results when explicitly specifying this parameter which might point to a potential issue in the package.
 
 ## Test 1 - types = "ALL"
 In this test case, we repeat the analysis but specify the `types` parameter to be equal to `ALL`. According to the package documentation, this should again produce all 3 (and a fourth) sets of results.
@@ -128,7 +128,7 @@ cor     6.458575 2  0.03958569
 In this example, we see the **test statistics match** with the previous R results, however the **degrees of freedom are mismatched**, leading to incorrect p-values.
 
 ## Test 2 - types = "rmeans"
-In this test case, we see that the `row means` test statistic is of interest and specify it directly.
+In this test case, the `row means` test statistic is of particular interest and specify it directly.
 
 ```{r, eval = F}
 CMHtest(Freq~x+y|k, data=r_cmh, overall=TRUE, details=TRUE, types = "rmeans")$ALL$table
@@ -166,11 +166,20 @@ cor     6.458575 2  0.03958569
 We see that test statistics again match, but the degrees of freedom mixed up leading to incorrect p-values.
 
 # Recommendation
-Given the potential impact for efficacy analysis and the unclear nature of the bug, we strongly caution against using this package at the current time. We plan to post this example to the authors github page as an issue.
+Given the potential impact for efficacy analysis and the unclear nature of the issue, we caution against using this package at the current time. We plan to post this example to the package authors github page as an issue.
 
-However, if the package *must* be used, we suggest:
+However, if you choose to use the package, we advise:
 
-* omitting the type parameter altogether. this seemed to provide consistent results with SAS.
+* Omitting the type parameter altogether. This seemed to provide consistent results with SAS.
 
 * For 2 x 2 x K designs, this might not be an issue as the test statistics, df and p-values are identical in this scenario. However, specifying a type argument in this design still technically results in mismatched, albeit equal, values. Please be aware of this. 
  
+# Versions
+
+SAS 9.4 was used for SAS-based computations
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(vcd)
+library(vcdExtra)
+sessionInfo()
+```
