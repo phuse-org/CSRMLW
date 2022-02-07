@@ -1,0 +1,402 @@
+reftrta,reftrtan,VISIT,VISITNUM,TRTA,TRTAN,PARAM,PARAMCD,comment,pval_interaction,lsmeans_difference,lowerci95,upperci95,covariatestructure
+,,,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.7479,-0.01641,-0.1169,0.08408,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.9163,-0.00544,-0.1074,0.09652,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.8317,-0.01097,-0.1125,0.09060,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.3706,0.3680,0.3732,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0064,0.04004,0.01138,0.06870,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0621,0.02768,-0.00141,0.05676,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.3968,0.01236,-0.01632,0.04105,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0185,0.03818,0.006468,0.06989,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.7031,-0.00631,-0.03892,0.02629,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.0062,0.04450,0.01274,0.07625,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0004,0.08935,0.04024,0.1385,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.2387,-0.03039,-0.08107,0.02029,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,<.0001,0.1197,0.07113,0.1683,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.002507,0.001802,0.003212,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.1781,0.1295,0.2268,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0198,0.06097,0.009751,0.1122,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,<.0001,0.1172,0.06831,0.1660,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.03812,0.03701,0.03924,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.1359,0.09302,0.1787,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.7485,0.007398,-0.03800,0.05280,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,<.0001,0.1285,0.08569,0.1713,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,<.0001,0.01527,0.01323,0.01731,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.1026,0.06393,0.1412,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.8728,0.003521,-0.03975,0.04680,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,<.0001,0.09903,0.05961,0.1384,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,<.0001,0.09620,0.05777,0.1346,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0619,0.04135,-0.00207,0.08478,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.0047,0.05485,0.01700,0.09270,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0008,0.07027,0.02937,0.1112,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.8401,0.004689,-0.04103,0.05041,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.0011,0.06558,0.02658,0.1046,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.0001,0.07551,0.03781,0.1132,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.2421,0.02563,-0.01743,0.06870,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.0087,0.04988,0.01274,0.08702,Heterogeneous Compound Symmetry
+,,,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.8554,-0.02622,-0.3093,0.2569,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.2134,-0.1687,-0.4351,0.09766,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.3155,0.1425,-0.1365,0.4215,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,<.0001,0.4348,0.4317,0.4380,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.0210,0.1260,0.01919,0.2329,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.8278,0.01202,-0.09669,0.1207,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.0373,0.1140,0.006786,0.2213,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.6652,0.02641,-0.09370,0.1465,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.4251,0.05028,-0.07369,0.1743,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.6961,-0.02387,-0.1441,0.09637,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.4242,0.04978,-0.07272,0.1723,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.2060,0.08163,-0.04519,0.2084,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.6054,-0.03185,-0.1531,0.08943,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,<.0001,1.1067,1.0996,1.1137,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.2656,0.07131,-0.05459,0.1972,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.1343,0.1018,-0.03168,0.2352,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.6360,-0.03045,-0.1570,0.09613,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,<.0001,1.0018,0.9979,1.0057,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.6125,0.03128,-0.09022,0.1528,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.8288,0.01423,-0.1152,0.1437,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.7817,0.01705,-0.1040,0.1381,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,<.0001,0.5538,0.5513,0.5563,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.9104,-0.00733,-0.1355,0.1208,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.3966,-0.06259,-0.2078,0.08260,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.4070,0.05526,-0.07580,0.1863,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.7800,0.02059,-0.1245,0.1656,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.7691,-0.02464,-0.1898,0.1406,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.5326,0.04523,-0.09733,0.1878,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.5854,0.04643,-0.1210,0.2139,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.4792,0.06781,-0.1207,0.2563,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.7912,-0.02139,-0.1804,0.1376,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.2661,-0.09039,-0.2501,0.06936,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.0417,-0.1910,-0.3747,-0.00724,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.2074,0.1006,-0.05614,0.2573,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.7494,-0.05255,-0.3763,0.2712,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.3707,-0.1376,-0.4400,0.1647,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.5969,0.08509,-0.2315,0.4017,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,<.0001,0.4342,0.4312,0.4371,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.0241,0.1262,0.01670,0.2357,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.8650,0.009628,-0.1018,0.1211,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.0377,0.1166,0.006688,0.2265,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.6825,0.02534,-0.09658,0.1473,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.4331,0.05014,-0.07567,0.1759,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.6893,-0.02480,-0.1468,0.09725,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.3161,0.06397,-0.06148,0.1894,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.1218,0.1026,-0.02755,0.2327,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.5407,-0.03860,-0.1628,0.08555,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,<.0001,1.1056,1.0992,1.1120,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.1835,0.08591,-0.04097,0.2128,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.0747,0.1227,-0.01232,0.2576,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.5708,-0.03676,-0.1643,0.09080,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,<.0001,1.0007,0.9972,1.0042,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.3737,0.05762,-0.06975,0.1850,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.5032,0.04650,-0.09013,0.1831,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.8633,0.01112,-0.1159,0.1382,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,<.0001,0.5541,0.5518,0.5564,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.8656,-0.01234,-0.1557,0.1311,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.3947,-0.07108,-0.2353,0.09315,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.4319,0.05874,-0.08824,0.2057,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.8733,-0.01354,-0.1807,0.1536,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.5789,-0.05439,-0.2472,0.1384,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.6286,0.04085,-0.1253,0.2070,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.7434,0.03059,-0.1533,0.2145,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.5782,0.05945,-0.1509,0.2698,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.7474,-0.02886,-0.2052,0.1475,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.1577,-0.1283,-0.3066,0.05002,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.0402,-0.2173,-0.4249,-0.00975,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.3151,0.08903,-0.08520,0.2633,Heterogeneous First Order Autoregressive
+,,,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.0327,0.09599,0.007952,0.1840,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.1213,0.06946,-0.01855,0.1575,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.5421,0.02653,-0.05907,0.1121,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.0535,0.02022,-0.00031,0.04076,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.1801,0.01423,-0.00662,0.03509,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.5663,0.005993,-0.01456,0.02655,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.0866,0.01682,-0.00244,0.03608,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.1829,0.01341,-0.00637,0.03320,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.7277,0.003409,-0.01586,0.02267,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.6110,-0.00545,-0.02652,0.01562,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.3816,0.009673,-0.01207,0.03141,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.1536,-0.01512,-0.03593,0.005690,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.1795,0.01428,-0.00662,0.03518,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.2726,0.01236,-0.00979,0.03452,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.8575,0.001916,-0.01908,0.02291,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.2093,-0.09913,-0.2543,0.05599,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.2150,0.01375,-0.00803,0.03553,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.3726,0.01058,-0.01276,0.03393,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.7760,0.003161,-0.01870,0.02503,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,<.0001,-0.06348,-0.07954,-0.04741,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.5882,0.007109,-0.01872,0.03294,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.7351,0.005027,-0.02421,0.03427,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.8771,0.002082,-0.02442,0.02859,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.1670,0.01839,-0.00774,0.04452,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.4313,0.01200,-0.01800,0.04200,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.6334,0.006383,-0.01995,0.03272,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.6087,0.008242,-0.02344,0.03992,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.9826,-0.00040,-0.03660,0.03580,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.5837,0.008643,-0.02239,0.03968,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.8446,0.003058,-0.02765,0.03376,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.5677,0.01037,-0.02534,0.04608,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.6352,-0.00731,-0.03764,0.02301,Heterogeneous First Order Autoregressive
+,,,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.0771,1.8895,-0.2073,3.9864,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.9367,0.09044,-2.1512,2.3321,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.0708,1.7991,-0.1537,3.7518,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,<.0001,-1.9942,-2.0290,-1.9595,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2058,-0.6242,-1.5935,0.3451,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.6186,0.2490,-0.7352,1.2332,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.0758,-0.8732,-1.8377,0.09133,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1061,-0.7781,-1.7229,0.1668,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1034,0.8056,-0.1651,1.7764,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.0011,-1.5837,-2.5240,-0.6434,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.5844,-0.3088,-1.4194,0.8019,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.8232,0.1289,-1.0070,1.2649,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.4266,-0.4377,-1.5207,0.6452,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,<.0001,-3.0044,-3.0326,-2.9763,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.3966,-0.4144,-1.3757,0.5469,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.4865,0.3549,-0.6483,1.3580,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.1128,-0.7692,-1.7215,0.1830,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,<.0001,2.4040,2.3114,2.4966,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.6371,-0.2662,-1.3765,0.8441,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.9224,0.05755,-1.1051,1.2202,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.5623,-0.3238,-1.4232,0.7757,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.5514,-0.1659,-0.7138,0.3820,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.9814,-0.01525,-1.3004,1.2699,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2749,0.7887,-0.6312,2.2087,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.2253,-0.8040,-2.1069,0.4989,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2072,0.8427,-0.4701,2.1554,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2334,0.8910,-0.5785,2.3606,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.9414,-0.04839,-1.3439,1.2471,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2310,-0.8452,-2.2319,0.5416,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.7653,-0.2338,-1.7751,1.3075,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.3651,-0.6114,-1.9388,0.7161,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1367,1.1460,-0.3660,2.6580,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.0624,1.6252,-0.08491,3.3353,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.5268,-0.4792,-1.9688,1.0105,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.0276,2.7742,0.3090,5.2394,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.9441,0.09194,-2.4882,2.6720,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.0184,2.6823,0.4572,4.9073,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,<.0001,-1.9870,-2.0298,-1.9442,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2218,-0.6173,-1.6100,0.3755,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.6402,0.2396,-0.7689,1.2480,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.0888,-0.8568,-1.8446,0.1310,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1168,-0.7751,-1.7452,0.1951,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1188,0.7909,-0.2045,1.7863,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.0016,-1.5660,-2.5309,-0.6010,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.6401,-0.2674,-1.3930,0.8581,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.7735,0.1688,-0.9855,1.3232,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.4347,-0.4363,-1.5347,0.6622,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,<.0001,-3.0011,-3.0349,-2.9672,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.4769,-0.3658,-1.3776,0.6459,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.5527,0.3198,-0.7397,1.3793,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.1787,-0.6856,-1.6871,0.3159,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,<.0001,2.3752,2.2661,2.4843,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.6823,-0.2441,-1.4173,0.9292,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.8073,0.1535,-1.0853,1.3923,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.5018,-0.3976,-1.5621,0.7670,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.3867,-0.2498,-0.8175,0.3178,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.8072,0.1850,-1.3073,1.6774,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2343,1.0089,-0.6581,2.6759,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.2856,-0.8239,-2.3404,0.6927,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.3072,0.8035,-0.7434,2.3504,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.4226,0.7158,-1.0398,2.4715,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.9112,0.08767,-1.4602,1.6355,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.2969,-0.8298,-2.3937,0.7341,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.6105,-0.4599,-2.2363,1.3165,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.6328,-0.3699,-1.8933,1.1536,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1868,1.1199,-0.5465,2.7863,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.1542,1.3943,-0.5274,3.3160,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.7419,-0.2743,-1.9136,1.3649,Heterogeneous First Order Autoregressive
+,,,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.1824,-0.06219,-0.1538,0.02941,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.9907,0.000495,-0.08337,0.08436,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.1755,-0.06269,-0.1536,0.02820,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,<.0001,0.1033,0.1004,0.1062,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.1146,0.02758,-0.00673,0.06188,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.5756,0.009914,-0.02492,0.04475,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.3101,0.01766,-0.01654,0.05187,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.3401,0.01689,-0.01792,0.05171,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.6128,0.009199,-0.02656,0.04496,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.6609,0.007695,-0.02682,0.04220,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.2865,0.02150,-0.01815,0.06115,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.9752,-0.00065,-0.04167,0.04038,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.2647,0.02215,-0.01688,0.06118,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,<.0001,0.2761,0.2738,0.2783,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.2455,0.02245,-0.01554,0.06043,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.8362,0.004211,-0.03586,0.04429,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.3454,0.01823,-0.01976,0.05623,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,<.0001,-0.2851,-0.2900,-0.2801,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.4474,0.01484,-0.02357,0.05324,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.1548,0.02943,-0.01119,0.07005,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.4526,-0.01459,-0.05280,0.02362,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,<.0001,0.1189,0.1158,0.1219,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.7493,0.007792,-0.04019,0.05577,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.6535,0.01241,-0.04200,0.06683,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.8534,-0.00462,-0.05384,0.04460,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.4271,-0.01956,-0.06799,0.02887,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.5869,-0.01531,-0.07073,0.04012,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.8610,-0.00425,-0.05206,0.04356,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.6767,-0.01128,-0.06450,0.04194,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.5242,0.01947,-0.04067,0.07962,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.2337,-0.03075,-0.08150,0.01999,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.4536,-0.01776,-0.06438,0.02886,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.4439,-0.02085,-0.07442,0.03272,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.8943,0.003093,-0.04273,0.04892,Heterogeneous Compound Symmetry
+,,,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.2239,-0.1276,-0.3338,0.07856,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1490,-0.1438,-0.3395,0.05189,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.8695,0.01621,-0.1779,0.2103,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,<.0001,0.1496,0.1471,0.1521,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1734,-0.04383,-0.1071,0.01941,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.2457,-0.03818,-0.1028,0.02645,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.8621,-0.00565,-0.06963,0.05833,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0308,-0.07999,-0.1525,-0.00747,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0069,-0.1034,-0.1782,-0.02861,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.5277,0.02340,-0.04949,0.09629,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1306,-0.05300,-0.1218,0.01583,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0352,-0.07652,-0.1477,-0.00537,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.4983,0.02351,-0.04479,0.09182,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,<.0001,0.1502,0.1461,0.1543,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0123,-0.08444,-0.1504,-0.01851,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0259,-0.07937,-0.1491,-0.00961,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.8808,-0.00507,-0.07165,0.06151,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,<.0001,-0.2997,-0.3016,-0.2978,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0916,-0.06426,-0.1390,0.01047,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0272,-0.08996,-0.1697,-0.01021,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.5014,0.02570,-0.04950,0.1009,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,<.0001,-1.4264,-1.4301,-1.4227,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0121,-0.1017,-0.1809,-0.02250,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.5560,-0.02703,-0.1173,0.06329,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.0727,-0.07469,-0.1563,0.006926,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1250,-0.06883,-0.1569,0.01924,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.7320,-0.01763,-0.1189,0.08366,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.2481,-0.05120,-0.1383,0.03592,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.6943,-0.01706,-0.1025,0.06835,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.9280,-0.00443,-0.1010,0.09214,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.7627,-0.01262,-0.09489,0.06964,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,,,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0271,-0.09655,-0.1821,-0.01103,Heterogeneous Compound Symmetry
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.8274,-0.01092,-0.1094,0.08761,Heterogeneous Compound Symmetry
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.0481,-0.08564,-0.1706,-0.00070,Heterogeneous Compound Symmetry
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0581,-0.2242,-0.4561,0.007725,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1800,-0.1490,-0.3672,0.06924,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.4971,-0.07523,-0.2932,0.1427,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,<.0001,0.1498,0.1472,0.1524,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1964,-0.04277,-0.1078,0.02226,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 2,4,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.2548,-0.03853,-0.1050,0.02797,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 2,4,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.8989,-0.00425,-0.07004,0.06155,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0311,-0.07986,-0.1524,-0.00731,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 4,5,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0074,-0.1026,-0.1774,-0.02784,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 4,5,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.5391,0.02277,-0.05017,0.09572,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.1139,-0.05704,-0.1278,0.01377,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 6,7,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0392,-0.07715,-0.1504,-0.00385,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 6,7,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.5731,0.02011,-0.05010,0.09033,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,<.0001,0.1499,0.1460,0.1538,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0084,-0.09091,-0.1583,-0.02353,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 8,8,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0206,-0.08460,-0.1561,-0.01307,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 8,8,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.8549,-0.00632,-0.07431,0.06167,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,<.0001,-0.2995,-0.3013,-0.2976,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0964,-0.06640,-0.1448,0.01197,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 12,9,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0409,-0.08795,-0.1722,-0.00366,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 12,9,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.5916,0.02155,-0.05746,0.1006,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,<.0001,-1.4264,-1.4300,-1.4229,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0137,-0.1070,-0.1919,-0.02209,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 16,10,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.5658,-0.02859,-0.1265,0.06935,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 16,10,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.0795,-0.07839,-0.1661,0.009301,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0906,-0.08674,-0.1873,0.01382,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 20,11,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.4907,-0.04111,-0.1584,0.07621,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 20,11,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.3744,-0.04563,-0.1467,0.05539,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.5028,-0.03210,-0.1263,0.06213,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 24,12,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.7204,-0.01979,-0.1286,0.08902,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 24,12,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.7921,-0.01231,-0.1042,0.07962,Heterogeneous First Order Autoregressive
+Placebo,0,UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,,,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.0510,-0.09357,-0.1875,0.000393,Heterogeneous First Order Autoregressive
+Xanomeline High Dose,81,WEEK 26,13,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,0.8203,-0.01269,-0.1226,0.09722,Heterogeneous First Order Autoregressive
+Placebo,0,WEEK 26,13,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.0881,-0.08088,-0.1739,0.01215,Heterogeneous First Order Autoregressive
+,,,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured
+,,,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,,,Compound Symmetry
+,,,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,,,First Order Autoregressive
+,,,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,,,Toeplitz
+,,,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,,,Unstructured

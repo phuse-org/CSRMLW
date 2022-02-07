@@ -1,0 +1,103 @@
+VISIT,VISITNUM,TRTA,TRTAN,PARAM,PARAMCD,comment,lsmeans,lsmeans_stderr,covariatestructure
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Unstructured
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Compound Symmetry
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Toeplitz
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Unstructured

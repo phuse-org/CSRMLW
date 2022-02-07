@@ -1,0 +1,613 @@
+VISIT,VISITNUM,TRTA,TRTAN,PARAM,PARAMCD,comment,lsmeans,lsmeans_stderr,covariatestructure,Effect
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Anisocytes,ANISO,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Basophils (GI/L),BASO,,0.01721,0.008130,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.02384,0.008541,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Basophils (GI/L),BASO,,0.004116,0.007294,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Basophils (GI/L),BASO,,-0.00794,0.002396,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00165,0.002419,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00491,0.002436,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Basophils (GI/L),BASO,,-0.01300,0.002408,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00617,0.002526,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00619,0.002537,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Basophils (GI/L),BASO,,-0.00980,0.002488,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00528,0.002668,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Basophils (GI/L),BASO,,0.000781,0.002594,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00487,0.01418,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Basophils (GI/L),BASO,,0.01779,0.02349,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Basophils (GI/L),BASO,,-0.01062,0.002493,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00241,0.002694,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Basophils (GI/L),BASO,,0.004188,0.002723,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Basophils (GI/L),BASO,,-0.00893,0.01469,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.02328,0.01743,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Basophils (GI/L),BASO,,-0.01299,0.002589,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00823,0.002769,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00105,0.002732,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Basophils (GI/L),BASO,,-0.01490,0.05159,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Basophils (GI/L),BASO,,0.01344,0.05852,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Basophils (GI/L),BASO,,-0.01105,0.002556,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00815,0.002971,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00131,0.003130,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Basophils (GI/L),BASO,,-0.00687,0.002535,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00790,0.003334,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00778,0.003377,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Basophils (GI/L),BASO,,-0.00764,0.002271,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00498,0.003041,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00270,0.002855,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Basophils (GI/L),BASO,,-0.01000,0.002728,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Basophils (GI/L),BASO,,-0.00824,0.003802,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Basophils (GI/L),BASO,,-0.00008,0.003688,Compound Symmetry,TRTAN*VISITNUM
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Basophils (GI/L),BASO,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Eosinophils (GI/L),EOS,,0.04011,0.04198,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.03272,0.04275,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.02443,0.04246,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.1446,0.2504,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,-0.02189,0.1582,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Eosinophils (GI/L),EOS,,-0.01745,0.01459,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.02075,0.01476,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,-0.00495,0.01485,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Eosinophils (GI/L),EOS,,-0.01770,0.01467,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.01856,0.01536,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.02523,0.01542,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Eosinophils (GI/L),EOS,,-0.01746,0.01511,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.06878,0.01613,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.1030,0.01573,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.08643,0.1010,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.03973,0.1621,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Eosinophils (GI/L),EOS,,-0.02095,0.01513,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.1503,0.01627,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.09523,0.01643,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Eosinophils (GI/L),EOS,,0.03238,0.08699,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.07260,0.1132,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Eosinophils (GI/L),EOS,,-0.03059,0.01566,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.09292,0.01669,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.1066,0.01653,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Eosinophils (GI/L),EOS,,-0.03295,0.07750,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.1185,0.2531,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Eosinophils (GI/L),EOS,,-0.03883,0.01547,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.05845,0.01781,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.07690,0.01869,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Eosinophils (GI/L),EOS,,-0.04425,0.01535,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.05439,0.01978,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.01752,0.02008,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Eosinophils (GI/L),EOS,,-0.03201,0.01393,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.03837,0.01817,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.04008,0.01719,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Eosinophils (GI/L),EOS,,-0.04283,0.01642,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Eosinophils (GI/L),EOS,,0.03419,0.02242,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Eosinophils (GI/L),EOS,,0.01497,0.02190,Compound Symmetry,TRTAN*VISITNUM
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Eosinophils (GI/L),EOS,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Hematocrit,HCT,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Hematocrit,HCT,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Hematocrit,HCT,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Hematocrit,HCT,,-0.00484,0.009326,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.00958,0.009562,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00823,0.008719,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.02919,0.01436,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Hematocrit,HCT,,-0.03293,0.03019,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Hematocrit,HCT,,-0.00371,0.002915,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.00847,0.002952,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00559,0.002994,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Hematocrit,HCT,,-0.00428,0.002957,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.01407,0.003092,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00833,0.003132,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Hematocrit,HCT,,-0.00803,0.003039,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.01190,0.003250,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00569,0.003127,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.05025,0.03133,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Hematocrit,HCT,,-0.1210,0.1013,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Hematocrit,HCT,,-0.00481,0.003036,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.01107,0.003328,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00712,0.003313,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Hematocrit,HCT,,-0.03730,0.02457,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.03988,0.02163,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Hematocrit,HCT,,-0.00698,0.003164,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.01387,0.003366,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00728,0.003351,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Hematocrit,HCT,,0.005966,0.01527,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Hematocrit,HCT,,-0.02200,0.02155,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Hematocrit,HCT,,-0.00126,0.003111,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.00895,0.003586,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00615,0.003828,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Hematocrit,HCT,,-0.00511,0.003092,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.00578,0.004040,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00974,0.004109,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Hematocrit,HCT,,-0.00241,0.002798,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.00760,0.003667,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00425,0.003498,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Hematocrit,HCT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Hematocrit,HCT,,-0.00319,0.003377,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Hematocrit,HCT,,-0.00381,0.004567,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Hematocrit,HCT,,-0.00827,0.004501,Compound Symmetry,TRTAN*VISITNUM
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Hematocrit,HCT,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Hemoglobin (mmol/L),HGB,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Lymphocytes (GI/L),LYM,,-0.09457,0.1420,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,-0.09113,0.1377,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.1237,0.1376,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,-0.2012,0.4797,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.7114,0.6882,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Lymphocytes (GI/L),LYM,,-0.1005,0.04425,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.01141,0.04463,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.01418,0.04510,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Lymphocytes (GI/L),LYM,,-0.01715,0.04446,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.002473,0.04669,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.04860,0.04702,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Lymphocytes (GI/L),LYM,,0.01035,0.04601,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.04633,0.04940,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.04678,0.04801,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.3171,0.2992,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-1.4203,0.7706,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Lymphocytes (GI/L),LYM,,-0.00709,0.04610,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.05647,0.04986,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.05005,0.05064,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Lymphocytes (GI/L),LYM,,-0.3036,0.3477,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.5201,0.3398,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Lymphocytes (GI/L),LYM,,-0.07782,0.04792,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,-0.05740,0.05142,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.06293,0.05078,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Lymphocytes (GI/L),LYM,,0.03852,0.2239,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.6446,0.3294,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Lymphocytes (GI/L),LYM,,-0.04314,0.04729,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,-0.08498,0.05536,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.00862,0.05836,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Lymphocytes (GI/L),LYM,,-0.08242,0.04694,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,-0.04535,0.06209,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.04901,0.06292,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Lymphocytes (GI/L),LYM,,-0.02819,0.04188,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,0.01070,0.05651,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,-0.05870,0.05296,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Lymphocytes (GI/L),LYM,,-0.00366,0.05068,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Lymphocytes (GI/L),LYM,,-0.1062,0.07110,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Lymphocytes (GI/L),LYM,,0.08556,0.06892,Compound Symmetry,TRTAN*VISITNUM
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Lymphocytes (GI/L),LYM,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Macrocytes,MACROCY,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.01805,0.01915,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.03741,0.02014,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00395,0.01978,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00954,0.007011,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.01087,0.007102,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00368,0.007142,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00490,0.007045,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.01271,0.007369,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.000948,0.007403,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.005706,0.007238,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.001489,0.007709,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00727,0.007478,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.001551,0.007248,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.01617,0.007782,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.002068,0.007870,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00199,0.007480,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.01403,0.007964,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.006833,0.007900,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.002604,0.03189,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.07448,0.1076,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00620,0.007400,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.005606,0.008460,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00137,0.008881,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00722,0.007356,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.009138,0.009362,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00299,0.009499,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.01615,0.006725,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00587,0.008627,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.00584,0.008230,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.01120,0.007824,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,0.000676,0.01053,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,,-0.01331,0.01036,Compound Symmetry,TRTAN*VISITNUM
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Ery. Mean Corpuscular Hemoglobin (fmol(Fe)),MCH,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2319,0.2812,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,0.1505,0.3100,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,0.08201,0.2804,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,1.1871,0.6449,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,0.1469,0.6601,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2424,0.08382,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1326,0.08549,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.00941,0.08497,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.3240,0.08531,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1904,0.09073,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.03353,0.09051,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.03500,0.08842,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2949,0.09626,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1877,0.09032,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,1.4228,0.6803,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,1.9474,1.1580,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2008,0.08827,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1997,0.09967,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.01351,0.09674,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,1.6594,1.0148,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-1.8618,1.5524,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2338,0.09262,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1670,0.1001,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.04263,0.09705,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,0.03168,0.6503,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1310,0.7268,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.3609,0.09072,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.4031,0.1094,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1080,0.1140,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1841,0.09029,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.4274,0.1234,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2024,0.1244,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.4243,0.07802,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2089,0.1102,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.1350,0.1023,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.2839,0.09925,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.6197,0.1421,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,,-0.3212,0.1381,Compound Symmetry,TRTAN*VISITNUM
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Ery. Mean Corpuscular HGB Concentration (mmol/L),MCHC,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,-1.1281,1.1276,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,-0.6392,1.3876,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,-1.0891,1.1413,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,-0.9675,2.7405,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,-2.5200,2.6989,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.0432,0.4039,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.4175,0.4134,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.1850,0.4132,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.5572,0.4091,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.8103,0.4289,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.03726,0.4310,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.1195,0.4178,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.7531,0.4484,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.7748,0.4307,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,-2.4796,2.2221,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,3.2354,2.5836,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.3050,0.4187,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.9197,0.4562,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.4334,0.4518,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,-1.4546,5.2439,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,3.8404,6.5655,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.2889,0.4324,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,1.1620,0.4614,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.9446,0.4533,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,2.2195,2.2248,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,-0.5713,4.7612,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.4806,0.4268,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,1.3904,0.4914,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.7812,0.5086,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,0.9184,0.4274,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,1.6418,0.5360,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.9261,0.5426,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.2646,0.3895,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,0.4032,0.4960,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.6718,0.4707,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Ery. Mean Corpuscular Volume (fL),MCV,,1.3447,0.4545,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Ery. Mean Corpuscular Volume (fL),MCV,,2.4802,0.6029,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Ery. Mean Corpuscular Volume (fL),MCV,,0.8931,0.5870,Compound Symmetry,TRTAN*VISITNUM
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Ery. Mean Corpuscular Volume (fL),MCV,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Microcytes,MICROCY,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Monocytes (GI/L),MONO,,0.02989,0.04730,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.02616,0.04442,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.006085,0.04449,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.1215,0.07565,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.1119,0.1300,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Monocytes (GI/L),MONO,,-0.01772,0.01381,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.01044,0.01393,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.001083,0.01402,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Monocytes (GI/L),MONO,,-0.00648,0.01392,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.01114,0.01466,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.001657,0.01466,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Monocytes (GI/L),MONO,,-0.00750,0.01440,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.01324,0.01556,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.01786,0.01502,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.1077,0.08055,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,-0.03486,0.1047,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Monocytes (GI/L),MONO,,0.003795,0.01443,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.02313,0.01575,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.02120,0.01583,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Monocytes (GI/L),MONO,,0.008224,0.07240,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.01091,0.2569,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Monocytes (GI/L),MONO,,0.001721,0.01510,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.01716,0.01617,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,-0.00856,0.01588,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Monocytes (GI/L),MONO,,-0.02890,0.1493,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.08896,0.1157,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Monocytes (GI/L),MONO,,0.02774,0.01484,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.03361,0.01744,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.01355,0.01845,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Monocytes (GI/L),MONO,,0.03839,0.01469,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.01874,0.01968,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.02931,0.02013,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Monocytes (GI/L),MONO,,0.03750,0.01298,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,0.02605,0.01783,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.005811,0.01676,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Monocytes (GI/L),MONO,,0.005770,0.01598,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Monocytes (GI/L),MONO,,-0.01021,0.02266,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Monocytes (GI/L),MONO,,0.009326,0.02203,Compound Symmetry,TRTAN*VISITNUM
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Monocytes (GI/L),MONO,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Platelet (GI/L),PLAT,,7.1465,11.2927,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,-19.3278,14.3366,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,-9.0132,11.6877,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Platelet (GI/L),PLAT,,-1.9086,3.9015,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,7.6956,3.9995,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,5.8159,3.9759,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Platelet (GI/L),PLAT,,-3.9888,3.9365,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,2.5545,4.1476,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,5.6836,4.1371,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Platelet (GI/L),PLAT,,1.1093,4.0401,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,-0.4853,4.3687,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,5.2983,4.2066,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,20.0829,19.0076,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,23.2140,81.6609,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Platelet (GI/L),PLAT,,-1.7474,4.0409,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,2.9640,4.3606,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,6.0394,4.4205,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Platelet (GI/L),PLAT,,-1.6708,21.9900,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,21.5500,30.5420,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Platelet (GI/L),PLAT,,-6.0727,4.2023,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,-4.6817,4.4581,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,4.3145,4.4254,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Platelet (GI/L),PLAT,,-11.1778,18.4721,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,-5.7068,35.8495,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Platelet (GI/L),PLAT,,-8.2681,4.1458,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,1.7193,4.8251,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,1.1727,4.9674,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Platelet (GI/L),PLAT,,-4.6240,4.1298,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,3.2462,5.2678,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,-0.9432,5.3142,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Platelet (GI/L),PLAT,,-7.2608,3.7569,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,-5.2839,4.9572,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,2.5893,4.6068,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Platelet (GI/L),PLAT,,1.3944,4.4062,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Platelet (GI/L),PLAT,,-6.6835,6.0026,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Platelet (GI/L),PLAT,,0.2859,5.7330,Compound Symmetry,TRTAN*VISITNUM
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Platelet (GI/L),PLAT,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Poikilocytes,POIKILO,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Polychromasia,POLYCHR,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Erythrocytes (TI/L),RBC,,-0.00975,0.07848,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1186,0.07886,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,0.02059,0.07663,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.2503,0.1645,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1843,0.3931,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Erythrocytes (TI/L),RBC,,-0.07499,0.02589,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1196,0.02612,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.08087,0.02655,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Erythrocytes (TI/L),RBC,,-0.1140,0.02598,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1911,0.02719,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.09774,0.02750,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Erythrocytes (TI/L),RBC,,-0.1260,0.02684,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1727,0.02865,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1064,0.02783,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.3210,0.1348,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.6007,0.5750,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Erythrocytes (TI/L),RBC,,-0.09759,0.02684,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1752,0.02890,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1047,0.02933,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Erythrocytes (TI/L),RBC,,-0.3331,0.1636,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.4827,0.2921,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Erythrocytes (TI/L),RBC,,-0.1405,0.02784,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.2124,0.02968,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1210,0.02956,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Erythrocytes (TI/L),RBC,,0.07339,0.1833,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.3884,0.3508,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Erythrocytes (TI/L),RBC,,-0.05520,0.02750,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1845,0.03190,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1295,0.03368,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Erythrocytes (TI/L),RBC,,-0.08935,0.02725,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1641,0.03576,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1549,0.03625,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Erythrocytes (TI/L),RBC,,-0.08076,0.02466,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1038,0.03246,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.09919,0.03084,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Erythrocytes (TI/L),RBC,,-0.06057,0.02937,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Erythrocytes (TI/L),RBC,,-0.1611,0.04032,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Erythrocytes (TI/L),RBC,,-0.1505,0.03945,Compound Symmetry,TRTAN*VISITNUM
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Erythrocytes (TI/L),RBC,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
+,_,Placebo,0,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN
+,_,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN
+,_,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN
+UNSCHEDULED 1.1,1.1,Placebo,0,Leukocytes (GI/L),WBC,,0.1735,0.4289,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.07987,0.4348,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.1,1.1,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.1075,0.4106,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.7794,0.6811,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.2,1.2,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.5730,2.6978,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 1.3,1.3,Placebo,0,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Placebo,0,Leukocytes (GI/L),WBC,,-0.3300,0.1370,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.1736,0.1382,Compound Symmetry,TRTAN*VISITNUM
+WEEK 2,4,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,-0.1362,0.1393,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Placebo,0,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 4.1,4.1,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Placebo,0,Leukocytes (GI/L),WBC,,-0.4084,0.1375,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.05454,0.1441,Compound Symmetry,TRTAN*VISITNUM
+WEEK 4,5,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.02514,0.1454,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Placebo,0,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 5.1,5.1,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Placebo,0,Leukocytes (GI/L),WBC,,-0.3486,0.1422,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.1139,0.1520,Compound Symmetry,TRTAN*VISITNUM
+WEEK 6,7,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.3833,0.1468,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,2.2041,1.5050,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 7.1,7.1,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,5.1090,3.9670,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Placebo,0,Leukocytes (GI/L),WBC,,-0.2998,0.1423,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.2607,0.1534,Compound Symmetry,TRTAN*VISITNUM
+WEEK 8,8,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.4046,0.1554,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Placebo,0,Leukocytes (GI/L),WBC,,-1.7234,1.2472,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 8.2,8.2,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,-8.6027,5.7726,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Placebo,0,Leukocytes (GI/L),WBC,,-0.5221,0.1475,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.08029,0.1576,Compound Symmetry,TRTAN*VISITNUM
+WEEK 12,9,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.008674,0.1558,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Placebo,0,Leukocytes (GI/L),WBC,,0.5026,0.8887,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 9.2,9.2,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,-1.2294,1.5964,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Placebo,0,Leukocytes (GI/L),WBC,,-0.4282,0.1458,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.01257,0.1696,Compound Symmetry,TRTAN*VISITNUM
+WEEK 16,10,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.06881,0.1778,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Placebo,0,Leukocytes (GI/L),WBC,,-0.3742,0.1449,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.08544,0.1893,Compound Symmetry,TRTAN*VISITNUM
+WEEK 20,11,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,-0.01946,0.1918,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Placebo,0,Leukocytes (GI/L),WBC,,-0.1848,0.1302,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,0.01044,0.1734,Compound Symmetry,TRTAN*VISITNUM
+WEEK 24,12,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.1165,0.1624,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Placebo,0,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+UNSCHEDULED 12.1,12.1,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,,,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Placebo,0,Leukocytes (GI/L),WBC,,-0.3973,0.1555,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline Low Dose,54,Leukocytes (GI/L),WBC,,-0.3177,0.2156,Compound Symmetry,TRTAN*VISITNUM
+WEEK 26,13,Xanomeline High Dose,81,Leukocytes (GI/L),WBC,,0.006481,0.2087,Compound Symmetry,TRTAN*VISITNUM
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,First Order Autoregressive,
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous Compound Symmetry,
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Heterogeneous First Order Autoregressive,
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Toeplitz,
+,,,,Leukocytes (GI/L),WBC,Did not converge or Unable to make Hessian positive definite,,,Unstructured,
